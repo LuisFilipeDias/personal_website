@@ -624,6 +624,7 @@
 		
 			#nav ul li
 			{
+				
 			}
 			
 				#nav ul li a
@@ -784,4 +785,20 @@
 			#main > section.four
 			{
 				background-color: #e8edec;
+			}
+
+			#text_format
+			{
+				margin-left: 100px;
+				text-align: left;
+			}
+			
+			#text_format > ul > li
+			{
+				margin-left: 0px;
+			}
+			
+			#text_format > ul > ul > li
+			{
+				margin-left: 70px;
 			}
