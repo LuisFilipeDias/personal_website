@@ -787,6 +787,22 @@
 				background-color: #e8edec;
 			}
 
+			#main > section.projects_odd
+			{
+				background-color: #e8edec;
+    			line-height: 200%;
+    			font-size: 17px;
+    			padding: 50px;
+			}
+
+			#main > section.projects_even
+			{
+				background-color: #f5fafa;
+    			line-height: 200%;
+    			font-size: 17px;
+    			padding: 50px;
+			}
+
 			#text_format
 			{
 				margin-left: 100px;
