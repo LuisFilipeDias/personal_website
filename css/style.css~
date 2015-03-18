@@ -195,6 +195,12 @@
 		{
 			display: inline-block;
 			border: 0;
+				
+			-moz-transition: background-color 0.35s ease-in-out;
+			-webkit-transition: background-color 0.35s ease-in-out;
+			-o-transition: background-color 0.35s ease-in-out;
+			-ms-transition: background-color 0.35s ease-in-out;
+			transition: background-color 0.35s ease-in-out;
 		}
 		
 			.image img
@@ -789,18 +795,18 @@
 
 			#main > section.projects_odd
 			{
-				background-color: #f5fafa;
-    			line-height: 200%;
-    			font-size: 17px;
-    			padding: 50px;
+				background-color: #e8edec;
+    			line-height: 150%;
+    			font-size: 15px;
+    			padding: 40px;
 			}
 
 			#main > section.projects_even
 			{
 				background-color: #f5fafa;
-    			line-height: 200%;
-    			font-size: 17px;
-    			padding: 50px;
+    			line-height: 150%;
+    			font-size: 15px;
+    			padding: 40px;
 			}
 
 			#text_format

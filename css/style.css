@@ -790,17 +790,17 @@
 			#main > section.projects_odd
 			{
 				background-color: #e8edec;
-    			line-height: 200%;
-    			font-size: 17px;
-    			padding: 50px;
+    			line-height: 150%;
+    			font-size: 15px;
+    			padding: 40px;
 			}
 
 			#main > section.projects_even
 			{
 				background-color: #f5fafa;
-    			line-height: 200%;
-    			font-size: 17px;
-    			padding: 50px;
+    			line-height: 150%;
+    			font-size: 15px;
+    			padding: 40px;
 			}
 
 			#text_format

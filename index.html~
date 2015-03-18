@@ -176,143 +176,95 @@
 								<ul>
 									<li><strong>The Basics</strong></li>
 								</ul>
-								<p>
-									The idea behind building a homemade Meteorological Station (or something near this concept), came, as strange as it may seem, from the need to learn python scripting for professional purposes.
-									To do so I intended to invest some free time on a homemade project using the versatile Raspberry Pi (which I already introduced <a href="#RPi">here</a>).
-								</p>
-								
-								<p style="text-align:centre;">
-									<a href="images/meteo.jpg" data-lightbox="image-a">
-										<img src="images/meteo.jpg" height="300" style="float:left; margin: 0 5% 1% 5%; border-radius:10px;"/>
-									</a>
-								</p>
-								
-								<p>
-									To accompany my Raspberry I looked around my electronics box, where I found (amongst other things): a temperature sensor, a couple of PIC16F819, two matched RF Transceivers and a shiny breadboard.
-									With these components in hand, there wasn't much choice on what to do: I was going to create a Meteorological Station (or at least for now, a "basic digital thermometer")!
-								</p>
-								
-								<p>
-									So, about the Python scripting, where does it fit exatly? 
-								</p>
-								<p>
-									Okay, the Python script is suposed to be running on the Raspberry, where it must receive and interpret the information of the temperature sensor, then making it available for display on a personal website.
-									But let's not get ahead of ourselves!
-								</p>
-								<p>
-									Below I will explain the project in further detail, for that dividing it in 3 parts: the <b>Reading Station</b>; the <b>Link to the Internet</b>; and the <b>Displaying Website</b>.
-								</p>
-								
-								<br>
+									The idea: to build a homemade Meteorological Station.<br>
+									Why: to practice the Python scripting.<br>
+									How: using the versatile Raspberry Pi (which was already introduced <a href="#RPi">here</a>).<br>
+									To go along with the Raspberry, I chose: a temperature sensor, a couple of PIC16F819, two matched RF Transceivers and a breadboard.
+									With these components I started the project: to create a Meteorological Station (or, a "basic digital thermometer")!
+									Below I will explain the project in further detail, in 3 parts: the <b>Reading Station</b>; the <b>Link to the Internet</b>; and the <b>Displaying Website</b>.
+								<br><br><br>
 								<ul>
 									<li><strong>Reading Station</strong></li>
 								</ul>
-								
-								
 								<p style="text-align:centre;">
 									<a href="images/pic16f.jpg" data-lightbox="image-a">
-										<img src="images/pic16f.jpg" height="300" style="float:right; margin: 0 5% 1% 5%; border-radius:10px;"/>
+										<img src="images/pic16f.jpg" height="400" style="float:right; margin: 0 5% 1% 5%; border-radius:10px;"/>
 									</a>
 								</p>
-								<p>
-									This 1st part of the system, where the temperature is sensed, is supposed to be a standalone module powered by a battery and so, completely portable (up to a certain radius distance from the Raspberry Pi).
-								</p>
-								<p>
-									It's main components are:
-								</p>
-								
+									This 1st part of the system, where the temperature is sensed, is a standalone module powered by a battery and so, completely portable (up to a certain radius distance from the Raspberry Pi).<br><br>
+									The main components are:<br><br>
 									<ul><ul>
-										<li><b> 
+										<li>&#9658 <b> 
 											<a href="http://www.analog.com/static/imported-files/data_sheets/TMP35_36_37.pdf" class="link">TMP37:</a></b> 
 											a simple low voltage temperature sensor from <a href="http://www.analog.com/" class="link">Analog</a>. 
 											This sensor is intended for applications over the range of 5 C to 100 C and provides an output scale factor of 20 mV/C.
 										</li>
-										<li><b>
+										<li>&#9658 <b>
 											<a href="http://ww1.microchip.com/downloads/en/DeviceDoc/39598F.pdf" class="link">PIC16F189:</a></b> 
 											a generic purpose Microcontroller from <a href="http://www.microchip.com/" class="link">Microchip</a>, with the essential features (for this project) of Analog-to-Digital conversion and UART interfacing; 
 										</li>
-										<li><b>
+										<li>&#9658 <b>
 											<a href="http://www.sureelectronics.net/goods.php?id=1053" class="link">Wireless RF Transceiver:</a></b> 
 											a 2 pieces RF Transceiver with an UART interface, for establishing the communication between the serial interfaces of the PIC16F819 and the Raspberry Pi.</b>
 										</li>					
 									</ul></ul>
-								<p>	
-									As of the configuration setup it is very simple: a basic C program (compiled with <a href="http://http://www.ccsinfo.com/" class="link">CCS:</a>) was loaded into the PIC, so as to read the TMP37 output voltage with the internal ADC.
-									This C program is then responsible to send the raw information (hexadecimal format from 0x00 to 0xFF) throught the serial interface to the PIC RF module which forwards it to its twin module, on the Raspberry side.
-								</p>
+									The configuration setup is very simple: a simple C program is loaded into the PIC, to read the TMP37 output voltage with the internal ADC.
+									This program is then responsible to send the raw information (hexadecimal format from 0x00 to 0xFF) through the serial interface into the PIC RF module which forwards it to its twin module, on the Raspberry side.<br><br>
+								
 								<br>
 								<ul>
 									<li><strong>Link to the Internet</strong></li>
 								</ul>
-								<p>
-									The information emmited above is then received by the Raspberry Pi, using its RF Module connected to the serial interface.
-									A Python script transforms the hexadecimal information gathered into both Voltage and Temperature using the formulas:
-								</p>
+									The information emitted above is then received by the Raspberry Pi, using its RF Module connected to the serial interface.
+									A Python script transforms the hexadecimal information gathered into both Voltage and Temperature using the formulas:<br><br>
 									<ul><ul>
-										<li>&#9632 <b>Voltage</b> = Raw/255 * 5 V;</li>
-										<li>&#9632 <b>Temperature</b> = Voltage * 50 C;</li>
+										<li>&#9658 <b>Voltage</b> = Raw/255 * 5 V;</li>
+										<li>&#9658 <b>Temperature</b> = Voltage * 50 C;</li>
 									</ul></ul>
 																		
-								<p>
-									The reason to process the information at this side of the link instead of the PIC's side, is that this simplifies the information transmission (only the raw signal is sent). 
-									Furthermore the purpose of the whole project was to improve the Python scripting skills, and not so much the C programming, so it was only logical to perform these operations on the receiving side of the transmission.
-								</p>
+									The reason to process the information at this side of the link instead of the PIC's side, is to simplify the information transmission (only the raw signal is sent). 
+									Furthermore the purpose of the whole project was to improve the Python scripting skills, and not the C programming.<br>
+									Having the information on the Raspberry side, the python script is then responsible to upload it to an SQL server online.
 								<p style="text-align:centre;">
 									<a href="images/rasp_rf.jpg" data-lightbox="image-a">
-										<img src="images/rasp_rf.jpg" width="400" style="margin: 0 5% 1% 5%; border-radius:10px;"/>
+										<img src="images/rasp_rf.jpg" width="400" style="margin: 4% 5% 1% 5%; border-radius:10px;"/>
 									</a>
-								</p>
-								<p>
-									With the data of interest at hand, the same script then uploads the freshly read temperature to an online SQL database.
-									This last step meaning the information of interest is now available online, and the process almost finished.
-								</p>
-								<p>
-									A note still for the fact that the refered script is placed at the Raspberry <b>rc.local</b>, so as to be started after the boot, thus updating the database every time the device is powered up.
-								</p>
-
+								
 								<br>
 								<ul>
 									<li><strong>Displaying Website</strong></li>
 								</ul>
-								<p>
-									The final piece of the puzzle is the website where the temperature is finally displayed. 
 									Here a php script running on a webserver, accesses the same SQL database that is linked to the Raspberry, and downloads the latest temperature.
-									This value is then printed on the display inside a circle which has different colors for distinct temperatures:
-								</p>
+									This value is then printed on the display inside a circle which has different colours for distinct temperatures:
 									<ul><ul>
-										<li>&#9632 <b style="color: blue;">Blue:</b> temperature is less than 10 C;</li>
-										<li>&#9632 <b style="color: green;">Green:</b> temperature is in between 10 C and 20 C;</li>
-										<li>&#9632 <b style="color: orange;">Orange:</b> temperature is in between 20 C and 30 C;</li>
-										<li>&#9632 <b style="color: red;">Red:</b> temperature is higher than 30 C;</li>
-									</ul></ul>									
-								<p>
+										<li>&#9658 <b style="color: blue;">Blue:</b> temperature is less than 10 C;</li>
+										<li>&#9658 <b style="color: green;">Green:</b> temperature is in between 10 C and 20 C;</li>
+										<li>&#9658 <b style="color: orange;">Orange:</b> temperature is in between 20 C and 30 C;</li>
+										<li>&#9658 <b style="color: red;">Red:</b> temperature is higher than 30 C;</li>
+									</ul></ul>			
 									The aforementioned website, which is public and available at <a href="http://meteo.comuv.com/">http://meteo.comuv.com/</a> is quite straightforward and effective in filling its only purpose (for now at least): showing the current temperature of the room where the Reading Station is located at.
-									A picture of this website main page is found below.
+									A picture is found below.
 								</p>
 								<p style="text-align:centre;">
 									<a href="images/meteo_web.png" data-lightbox="image-a">
-										<img src="images/meteo_web.png" width="700" style="margin: 0 5% 1% 5%; border-radius:10px;"/>
+										<img src="images/meteo_web.png" width="500" style="float:center; margin: 0 5% 1% 5%; border-radius:10px;"/>
 									</a>
 								</p>
-	
-	
 								<br>
 								<ul>
 									<li><strong>To be Continued</strong></li>
 								</ul>
-								<p>
-									So, the first part of the project is finished with success, but it isn't all!
-									Further improvements can be expected in the near future:
-									
+									The first part of the project was finished with success, but further improvements are lacking:
 									<ul><ul>
-										<li>&#9632 <b>Specific voltage reference:</b> for improving the measurements accuracy;</li>
-										<li>&#9632 <b>Some batteries:</b> replacing the USB power connection will improve the system versatility;</li>
-										<li>&#9632 <b>More/Different sensors:</b> carbon monoxide gas sensor, gas sensor, relative humidity sensor, the hypotheses are endless;</li>
-										<li>&#9632 <b>New PCB:</b> instead of a breadboard, the final system should have a good looking PCB, with the components soldered;</li>
-										<li>&#9632 <b>Custom Case:</b> for a final product look, a case will be made to protect the PCB and the whole Reading System.</li>
-									</ul></ul>			
-														
-								</p>
+										<li>&#9658 <b>Specific voltage reference:</b> for improving the measurements accuracy;</li>
+										<li>&#9658 <b>Some batteries:</b> replacing the USB power connection will improve the system versatility;</li>
+										<li>&#9658 <b>More/Different sensors:</b> carbon monoxide gas sensor, gas sensor, relative humidity sensor, e.g.;</li>
+										<li>&#9658 <b>New PCB:</b> instead of a breadboard, the final system should be embedded on a PCB;</li>
+										<li>&#9658 <b>Custom Case:</b> for a final product look, a case ought be made to protect the whole system.</li>
+									</ul></ul>	
+									<br>	
+									UPDATE: the site is still online, but the Meteo Station is currently not working.
+									<br>	
 							</div>
 						</div>
 							<footer>
