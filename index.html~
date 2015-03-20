@@ -180,9 +180,9 @@
 									Why: to practice the Python scripting.<br>
 									How: using the versatile Raspberry Pi (which was already introduced <a href="#RPi">here</a>).<br>
 									To go along with the Raspberry, I chose: a temperature sensor, a couple of PIC16F819, two matched RF Transceivers and a breadboard.
-									With these components I started the project: to create a Meteorological Station (or, a "basic digital thermometer")!
-									Below I will explain the project in further detail, in 3 parts: the <b>Reading Station</b>; the <b>Link to the Internet</b>; and the <b>Displaying Website</b>.
-								<br><br><br>
+									With these components I started the project: to create a Meteorological Station (or, a "basic digital thermometer").<br>
+									Below I explain the project in further detail, in 3 parts: the <b>Reading Station</b>; the <b>Link to the Internet</b>; and the <b>Displaying Website</b>.
+								<br><br>
 								<ul>
 									<li><strong>Reading Station</strong></li>
 								</ul>
@@ -191,7 +191,7 @@
 										<img src="images/pic16f.jpg" height="400" style="float:right; margin: 0 5% 1% 5%; border-radius:10px;"/>
 									</a>
 								</p>
-									This 1st part of the system, where the temperature is sensed, is a standalone module powered by a battery and so, completely portable (up to a certain radius distance from the Raspberry Pi).<br><br>
+									This 1st part of the system, where the temperature is sensed, is a standalone module powered by a battery and so, completely portable (up to a certain radius distance from the Raspberry Pi).<br>
 									The main components are:<br><br>
 									<ul><ul>
 										<li>&#9658 <b> 
@@ -211,7 +211,6 @@
 									The configuration setup is very simple: a simple C program is loaded into the PIC, to read the TMP37 output voltage with the internal ADC.
 									This program is then responsible to send the raw information (hexadecimal format from 0x00 to 0xFF) through the serial interface into the PIC RF module which forwards it to its twin module, on the Raspberry side.<br><br>
 								
-								<br>
 								<ul>
 									<li><strong>Link to the Internet</strong></li>
 								</ul>
@@ -250,7 +249,6 @@
 										<img src="images/meteo_web.png" width="500" style="float:center; margin: 0 5% 1% 5%; border-radius:10px;"/>
 									</a>
 								</p>
-								<br>
 								<ul>
 									<li><strong>To be Continued</strong></li>
 								</ul>
@@ -262,7 +260,6 @@
 										<li>&#9658 <b>New PCB:</b> instead of a breadboard, the final system should be embedded on a PCB;</li>
 										<li>&#9658 <b>Custom Case:</b> for a final product look, a case ought be made to protect the whole system.</li>
 									</ul></ul>	
-									<br>	
 									UPDATE: the site is still online, but the Meteo Station is currently not working.
 									<br>	
 							</div>
@@ -291,21 +288,10 @@
 										<img src="images/rest.png" height="250" style="float:right; margin: 0 5% 1% 5%; border-radius:10px;"/>
 									</a>
 								</p>
-								<p>
-									eMenu is a brand new service, that includes both a platform for restaurants to insert information related with their activity, but also a mobile application where their clients can consult this information.
-								</p>
-								<p>
-									This idea followed the development and publication of <a id="inside_links" href="#CantSiemens">Cantina Siemens</a>, when a friend suggested the purpose of this application to be more encompassing, not only as an application for viewing the canteen's menu at my workplace but with a broader purpose.
-									Although  at the time the suggestion was not taken very seriously, since no further changes were made to <a href="#CantSiemens">Cantina Siemens</a>, the idea had been planted. 
-								</p>
-								<p>
-									The concept was embraced afterwards, with this new project being born from the will to create something new. Some (many) elements were taken from the experience with the canteen application but many others were added/improved or completely changed.	
-								</p>	
-								<p>
-									But first and foremost, let's go through some main points of this project, by enlightening the two main perspectives:
-								</p>	
+									eMenu is a new service, that includes both a platform for restaurants to insert information related with their activity, but also a mobile application where the clients can consult information.<br>							
+									The two main components are:<br><br>
 									<ul><ul>
-										<li>&#9658 <b>Restaurants:</b>
+										<li>&#9658 <b>The Restaurants:</b><br><br>
 											<ul>
 												<li>&#9632 Pay for a membership account that allows them to use the web platform;</li>
 												<li>&#9632 Insert their information (plates, menu's, prices, locations, ...) on the platform;</li>
@@ -313,18 +299,15 @@
 												<li>&#9632 Gain a simple, easy and quick way to get closer to their clients;</li>
 											</ul></li>
 											
-										<li>&#9658 <b>Clients:</b>
+										<li>&#9658 <b>The Clients:</b><br><br>
 											<ul>
 												<li>&#9632 Can download the eMenu application for free;</li>
 												<li>&#9632 Have a single point of access to all the establishments on the database;</li>
 												<li>&#9632 Get an innovative service, with vast information on their favourite restaurants;</li>
-											</ul></li><br>
-											
+											</ul></li>
 									</ul></ul>	
 									
-								<p>
-									Restaurants and their clients are brought together with this service, the restaurants without having to spend lots of money on advertising, the clients without having to resort to different points to get the information they want.	
-								</p>
+									Restaurants and the clients are brought together with this service, the restaurants without having to spend lots of money on advertising, the clients without having to resort to different points to get the information they want.<br><br>	
 									
 								<p style="text-align:centre;">
 									<a href="images/emenu_c.png" data-lightbox="image-b">
@@ -332,29 +315,17 @@
 									</a>
 								</p>
 								
-								<br>
 								<ul>
 									<li><strong>The Web Platform</strong></li>
 								</ul>
-								<p>
-									Having made the introductions, it is time to go into details. 
-									It should be noted that for the time being only the web platform will be described since the other half of this service, the customer's Android application is still on a development phase.
-								</p>
-
-								<p>
-									So, accessing the website for the first time, the welcoming page is displayed, together with a menu containing the options to access the list of restaurants, the login or the join form page. 
-									A user having successfully made the registration on the service, can, after login, access one of the following pages:
-								</p>
-								
-								
-								<p>	
+									Accessing the website for the first time, the welcoming page is displayed, together with a menu containing the options to access the list of restaurants, the login or the join form page. 
+									A user having successfully made the registration on the service, can, after login, access one of the following pages:<br><br>
 									<ul><ul>
 										<li>&#9658 <b>Menu ('Ementa')</b>: here the different plates available are shown (amongst them the Meat Plates, Drinks or Deserts);</li>
 										<li>&#9658 <b>Restaurant Information ('Name')</b>: some information on the place, such as telephone, location or description;</li>
 										<li>&#9658 <b>Restaurant Account ('Conta')</b>: page for editing the information above;</li>
 										<li>&#9658 <b>Logout ('Terminar Sessão')</b>: option to logout, and return to the welcoming page.</li>
 									</ul></ul>	
-								</p>
 								<br>
 
 								<p style="text-align:centre;">
@@ -362,24 +333,12 @@
 										<img src="images/emenu_e.png" height="250" style="border-radius:10px;"/>
 									</a>
 								</p>
-								<p>
-									A feature that must be highlighted is that the access to the member's area is completely secure, since an encrypted password is enforced.
-									This way, only the restaurant can edit its own details.
-								</p>
-								<p>
-									As introduced before there is also the option to check the restaurants on the database and respective menu's and details, however this is to be used on a client's perspective, so a logout is necessary from the member´s area.
-								</p>
 
-								<br>
 								<ul>
 									<li><strong>Wrap up</strong></li>
 								</ul>
 								<p>
-									The foundations are made, and the web interface is now ready to be used. 
-									The next step should be terminating the application for which the first steps have already been taken a couple of months ago with <a href="#CantSiemens">Cantina Siemens</a>.
-								</p>
-								<p>
-										In the meantime the website is now available for the most curious ones  (by clicking the image below), and the <a href="mailto:luisfiliperdias@gmail.com">Inbox</a> ready to receive suggestions and hints!
+										The website is available by clicking the image below, and the <a href="mailto:luisfiliperdias@gmail.com">Inbox</a> is ready to receive suggestions and hints!
 								</p>
 		
 									<p style="text-align:centre;">
@@ -414,33 +373,11 @@
 										<img src="images/vimeca.jpg" height="250"  style="float:right; margin: 0 5% 1% 5%; border-radius:10px;"/>
 									</a>
 								</p>
-								<p>
-									Horarios Vimeca was the second experience over which I engaged the Android world. 
-								</p>
-								<p>
 									As a customer of the <a title="Vimeca Website" class="link" href="http://www.vimeca.pt">Vimeca</a>'s Bus company for over half a year, I noticed a deficit of information on the Bus timings.
 									No digital information panel, not even the printed timetables posted on the Bus stop. 
-									This meant inability to know the arrival times of the different Bus.
-								</p>
-
-								<p>
-									Room for a new service emerged, room to improve the <a title="Vimeca Website" class="link" href="http://www.vimeca.pt">Vimeca</a> client's satisfaction and convenience: an application for checking the Bus timetables at any time, any place, at the customer's Android device.	
-								</p>
-								<ul>
-									<br>
-									<li><strong>Development</strong></li>
-								</ul>
+									This meant inability to know the arrival times of the different Buses.<br>
+									Similarly to Cantina Siemens app, the information is also gathered online, in this case from <a title="Vimeca Website" class="link" href="http://www.vimeca.pt">Vimeca</a>'s website (<a title="Vimeca Website" class="link" href="www.vimeca.pt">www.vimeca.pt</a>) where all the timetables and routes are available.
 																		
-								<p>
-									As of the development time for this application, whilst significantly more complex than <a href="#CantSiemens">Cantina Siemens</a>, the time was much smaller.
-									This is explained with the learning curve obtained from the previous experience, meaning some entry barriers had been lifted, and things made easier.
-									As an example of this time/difficulty difference, the number of versions: <b>21</b> for <a href="#CantSiemens">Cantina Siemens</a> vs. <b>4</b> for Horarios Vimeca.
-								</p>
-										
-								<p>
-									Similarly to the other app, the information is also gathered online, in this case from <a title="Vimeca Website" class="link" href="http://www.vimeca.pt">Vimeca</a>'s website (<a title="Vimeca Website" class="link" href="www.vimeca.pt">www.vimeca.pt</a>) where all the timetables and routes are available, and is then integrated into the application for a simple and intuitive inquiry.
-								</p>
-
 								<ul>
 									<br>
 									<li><strong>Showcase</strong></li>
@@ -448,17 +385,17 @@
 									
 									
 								<p>
-									Getting into further details over this App, and relying on the screenshots below we have that: the first view displayed is the loading menu, where the selected bus timetable is loaded in the background.						
+									Guiding up on the screenshots below we have that: the first view displayed is the loading menu, where the selected bus timetable is loaded in the background.						
 									Then the main view is displayed, and organized as follows:
 								</p>
 									<ul><ul>
-										<li>&#9658 <b>Selected Bus ('Autocarro')</b>: list to select which Bus schedules are to be displayed;</li><br>
-										<li>&#9658 <b>Origin of the departure ('Origem')</b>: the direction from which to display the schedules;</li><br>
-										<li>&#9658 <b>Departure hour ('Hora de partida')</b>: a filter applied to the timetable, to simplify the search of the desired hour;</li><br>
-										<li>&#9658 <b>Route ('Percurso')</b>: loads the route image on a new view, for display on the device;</li><br>
-										<li>&#9658 <b>Circulation days ('Sem', 'Sab', Dom')</b>: days of circulation and respective schedules divided in: Weekdays ('Sem'), Saturday ('Sab') and Sunday ('Dom');</li><br>
-										<li>&#9658 <b>Selected Departure</b>: selected origin of departure;</li><br>
-										<li>&#9658 <b>Bus Origin departures</b>: main feature, list with the departing hour from the origin of the course. To get the hours for the intermediate stops, the Route option must be used.</li><br>
+										<li>&#9658 <b>Selected Bus ('Autocarro')</b>: list to select which Bus schedules are to be displayed;</li>
+										<li>&#9658 <b>Origin of the departure ('Origem')</b>: the direction from which to display the schedules;</li>
+										<li>&#9658 <b>Departure hour ('Hora de partida')</b>: a filter applied to the timetable, to simplify the search of the desired hour;</li>
+										<li>&#9658 <b>Route ('Percurso')</b>: loads the route image on a new view, for display on the device;</li>
+										<li>&#9658 <b>Circulation days ('Sem', 'Sab', Dom')</b>: days of circulation and respective schedules divided in: Weekdays ('Sem'), Saturday ('Sab') and Sunday ('Dom');</li>
+										<li>&#9658 <b>Selected Departure</b>: selected origin of departure;</li>
+										<li>&#9658 <b>Bus Origin departures</b>: main feature, list with the departing hour from the origin of the course. To get the hours for the intermediate stops, the Route option must be used.</li>
 										<li>&#9658 <b>Additional Information ('Clique para obter...)'</b>: pop-up with any additional information available at the website.</li><br>
 									</ul></ul>
 									
@@ -467,18 +404,10 @@
 										<img src="images/vimeca.png" width="600"/>
 									</a>
 								</p>
-								<p>
-									Although internet access is required on the first use of this application, so as to load the required Bus information, this information is then stored in a SQLite database on the device.
-								</p>
-								<p>
-									This means that the information on the timetable becomes available even for offline access.
-									Offline access was viewed as an indispensable feature since the beginning of the development, given that internet access at the Bus stops is scarce, and lacking it would frustrate the purpose.
-								</p>
-							
-								<p>
-									Similarly to <a href="#CantSiemens">Cantina Siemens</a> this application is also available for Android at Google Play, for free.
-								To try it out, just download it from the image below.
-								</p>
+									Although internet access is required on the first use of this application, so as to load the required Bus information, this information is then stored in a SQLite database on the device.<br>
+									This means that the information on the timetable becomes available even for offline access.<br>
+									Offline access was viewed as an indispensable feature since the beginning of the development, given that internet access at the Bus stops is scarce, and lacking it would frustrate the purpose.<br>
+									Similarly to <a href="#CantSiemens">Cantina Siemens</a> this application is also available for Android at Google Play, for free, in the link below.<br><br><br>
 								
 					
 								<p style="text-align:centre;">
@@ -508,24 +437,18 @@
 								<ul>
 									<li><strong>The Beginning</strong></li>
 								</ul>
-								<p>Cantina Siemens was initially seen with a simply entry door to the Android world, an entertainment to get a general overview over mobile applications programming. 
-									Nevertheless it seem obvious that if it was to create something, it should be to create something new and useful above all.</p>
-								<p>That's when things started to get serious: the project seemed interesting, especially when thinking of people actually using the application on a day-to-day basis.</p>
-								<p>Before entering the details of this application however, a simple explanation on what it is all about is a must:</p>
+								Cantina Siemens was the first Android experience, and came from the need to learn by creating something new and useful.<br>
+								Basically:<br><br>
 								<ul><ul>
-									<li>&#9658 Cantina Siemens was the canteen of my workplace, at Amadora-Lisbon, that serves daily meals both to the employees of <a class="link" href="http://www.siemens.com/entry/pt/pt/">Siemens</a>, <a href="http://www.nokiasiemensnetworks.com/" class="link">Nokia Siemens Networks</a>, and <a class="link" href="http://www.coriant.com/">Coriant</a>.</li><br>
-									<li>&#9658 This canteen has different daily menus, whose contents are weekly updated on a proper website, thus allowing people to access the menus for the week.</li><br>
-									<li>&#9658 The idea was to bring this access to the mobile world, without having to open a browser, writing the link, and reading the contents in an all messed up format.</li><br>
-									<li>&#9658 <strong>The idea was to simplify!</strong></li><br>
+									<li>&#9658 Cantina Siemens was the canteen of my workplace, at Amadora-Lisbon, that serves daily meals both to the employees of <a class="link" href="http://www.siemens.com/entry/pt/pt/">Siemens</a>, <a href="http://www.nokiasiemensnetworks.com/" class="link">Nokia Siemens Networks</a>, and <a class="link" href="http://www.coriant.com/">Coriant</a>.</li>
+									<li>&#9658 The canteen has different daily menus, whose contents are weekly updated on a proper website, thus allowing people to access the menus for the week.</li>
+									<li>&#9658 The idea was to bring this access to the mobile world.</li>
+									<li>&#9658 <strong>The idea was to simplify!</strong></li>
 								</ul></ul>
-								<p>
-									Before providing more details, it is important to state that the knowledge necessary to develop this App was obtained predominantly from Youtube videos, were I underline the contribution of Bucky Roberts <a href="http://www.youtube.com/user/thenewboston" class="link">(TheNewBoston Youtube Channel)</a>  as well as from google searches, and that this was a 1st time experience.
-								</p>
 								<ul>
-								<br>
 								<li><strong>The Application</strong></li>
 								</ul>
-								<p>The application itself is rather simple, consisting on only 3 different views.</p>
+								<p>The application very simple, consisting on only 3 different views.</p>
 								<ul>
 								<ul>
 									<li>&#9658 The Loading Screen</li>
@@ -540,16 +463,16 @@
 									</a>
 								</p>
 								
-								<p>As of the application's operation is as follows:</p>
+								The application's operation is as follows:<br><br>
 								<ul>
 								<ul>
-									<li>&#9658 As the App is launched, if there is a network connection available the plates data is loaded into a String array, during which the loading screen is shown, otherwise, if there is no internet access, the user is prompted to check the network connections;</li><br>
-									<li>&#9658 Then, the menu is loaded, where the user can launch the plate listing window in Portuguese or in English, or refresh the list, get some info on the application or exit it;</li><br>
-									<li>&#9658 The last view contains the plates themselves and is divided in smaller windows, each for the corresponding day of the week. Here the user can swipe between days of the week. Additionally it can click on the plates and directly google about it, to get extra information.</li><br>
+									<li>&#9658 The App is launched, if there is a network connection available the plates data is loaded into a String array, during which the loading screen is shown, if there is no internet access, the user is prompted to check the network connections;</li>
+									<li>&#9658 Then, the menu is loaded, where the user can launch the plate listing window in Portuguese or in English, refresh the list or get some info on the application;</li>
+									<li>&#9658 The last view contains the plates and is divided in smaller windows, each for the a day of the week.</li>
 								</ul>
 								</ul>
 								<p>
-									This application is currently publicly available for Android platform, where it can be found and downloaded from Google Play, for free.
+									This application is publicly available for Android, where it can be found and downloaded from Google Play.
 								If you want to try it out, just download it by clicking on the image below.
 								</p>
 								
@@ -583,11 +506,11 @@
 								<ul>	
 									<li><strong>Raspwho?</strong></li>
 								</ul>
-								<p>The Raspberry Pi is a very small single-board computer developed in the UK with teaching purposes but whose potential has facilitated its deployment as a very powerful tool for both homemade projects and some companies.</p>
-								<p>The possibility to have a computer for $40, running a Linux OS, connected to the internet, and having directly available for example an UART, an I2C module or a dozen of GPIO pins, is very attractive.</p>
-								<p>Following this trend, and having seen some interesting projects over the internet I decided to invest in one of these devices, mostly for its versatility.</p>
+
+
+								The Raspberry Pi is a small computer developed for teaching purposes but whose potential has facilitated its deployment as a very powerful tool for both homemade projects and even some companies.
+								The possibility to have a computer for $40, running a Linux OS, connected to the internet, and having directly available for example an UART, an I2C module or a dozen of GPIO pins, is very attractive.<br><br>
 								<ul>
-								<br>
 								<li><strong>SSH Remote Control</strong></li>
 								</ul>
 								<p>One of the first thing I made was registering a dynamic DNS service, so I could gain remote access to the Raspberry (connected to the web via the Ethernet port). Having done this I also enabled on my router the NAT service, where I mapped the SSH Port of my $40 computer to a public Port. This way I became capable to enter the device&#8217;s terminal from any place of the web, and thus configure it. Even though an LCD could be connected via HDMI port, as well as a keyboard and a mouse turning this low-cost PC into a &#8220;normal&#8221; computer, I&#8217;ve chosen to access it from my PC with SSH, allowing a more comfortable operation.</p>
@@ -597,22 +520,19 @@
 										<img src="images/rpi_2.jpg" height="200" style="float:left; margin: 0 5% 1% 5%; border-radius:10px;"/>
 									</a>
 								</p>
-								<br>
 								<li><strong>FTP Server</strong></li>
 								</ul>
 								<p>As a second step, I configured an FTP server running as a daemon, and then plugged an  USB Flash Drive on the Raspberry Pi, so I could share files between all the computers on my network, and store them on only one location. Furthermore I mapped both FTP Ports on the router with NAT, and so I gained access to these files from any remote place. In a near future I&#8217;m considering replacing the USB Flash Drive with an 1 TB HD Drive using a Hub (since it draws a lot of current), thus creating a spot on the network where I can access all my data.</p>
 								<ul>
-								<br>
 								<li><strong>Transmission Remote<br /></strong></li>
 								</ul>
-								<p>Another configuration I made, towards a more integrated/practical IT environment at my place, was configuring a Torrent client (namely Transmission), running as daemon, associated to the corresponding  remote access service. Then I added a remote transmission widget on my browser, and opened the ports on the router, et voilà, I was now able to add/remove/manage any legal torrent/magnet from any place, with the great commodity of arriving home with the contents already downloaded and available for use.</p>
+								<p>Another configuration I made, towards a more integrated/practical IT environment, was configuring a Torrent client (namely Transmission), running as daemon, associated to the corresponding  remote access service. Then I added a remote transmission widget on my browser, and opened the ports on the router, et voilà, I was now able to add/remove/manage any legal torrent/magnet from any place, with the great commodity of arriving home with the contents already downloaded and available for use.</p>
 								<ul>
-								<br>
 								<li><strong>Receipt Management Software</strong></li>
 								</ul>
-								<p>Although the utility of all the previous configurations, the most interesting thing I made so far with the Raspberry Pi was to develop a simple C routine to run on the raspberry or any device accessing with an SSH session.</p>
-								<p>This consisted in a Receipt Management SW, where I could save, add, list or organize different receipts very easily, instead of using an ordinary receipt book. This program which would run by simply executing a bin file on the Raspberry Pi terminal, had the information saved in the USB Flash Drive so it could be easy to transport and hard get lost.</p>
-								<p>As of the program itself, it had the following interface:</p>
+								Although the utility of all the previous configurations, the most interesting thing I made so far with the Raspberry Pi was to develop a simple C routine to run on the raspberry or any device accessing with an SSH session.<br>
+								This consisted in a Receipt Management SW, where I could save, add, list or organize different receipts very easily, instead of using an ordinary receipt book. This program which would run by simply executing a bin file on the Raspberry Pi terminal, had the information saved in the USB Flash Drive so it could be easy to transport and hard get lost.<br>
+								As of the program itself, it had the following interface:<br><br>
 								<p style="text-align:centre;">
 									<a href="images/rpi_4.png" data-lightbox="image-2">
 										<img src="images/rpi_4.png" height="280"/>
@@ -624,9 +544,7 @@
 										<img src="images/rpi_5.png" height="310"/>
 									</a>
 								</p>
-								<p>Even thought this was a relatively easy to implement application, it was very fun to do, and it has been proven very useful (especially in those days when you don't know what to do for dinner!)</p>
 								<ul>
-								<br>
 								<li><strong>General Overview</strong></li>
 								</ul>
 								<p>At the end of these experiences a lot of advantages of this &#8220;cheap&#8221; computer seem obvious: it can perform most of  the same operations as an ordinary computer, while consuming much less resources, it&#8217;s very light and portable, provides very easy access to low-level components  it can be easily remotely accessed (with a smartphone inclusively).</p>
@@ -647,47 +565,26 @@
 							<div id="text_format">
 								
 								<a href="images/rato0.jpg" data-lightbox="image-3">
-									<img src="images/rato0.jpg" height="250" style="float:right; margin: 0 1% 1% 5%; border-radius:10px"/>
+									<img src="images/rato0.jpg" height="200" style="float:right; margin: 5% 1% 1% 5%; border-radius:10px"/>
 								</a>
 								<ul>
 									<li><strong>The Motivation</strong></li>
 								</ul>
-								<p>
 									As a second attempt on the Micro-Mouse competition title, after achieving the 2nd place in the previous year (<a href="#MicroMouse" class="link">Micro-Mouse 2011</a>),
-								me and <a title="Fábio Rico's Website" class="link" href="http://www.fabiorvrico.wordpress.com">Fábio Rico</a>, decided to participate again.
-								</p>
-								<p>
-									This time, however, a decision was made to go farther, to increase the challenge, so we settled to build the entire robot from scratch, and only then add some intelligence to it (software).
-								This made the task at hands way harder, but also much more amusing and challenging. 
-								</p>
-								<p>
-									An early sketch can be found on the picture to the right.
-								</p>
+								me and <a title="Fábio Rico's Website" class="link" href="http://www.fabiorvrico.wordpress.com">Fábio Rico</a>, decided to participate again.<br>
+									This time, however, a decision was made to build the entire robot from scratch, and then add some intelligence to it, which made the task harder, but also much more amusing and challenging.<br> 
+									An early sketch can be found on the picture to the right.<br>
 								<br>
 								<ul>
 									<li><strong>The Development</strong></li>
 								</ul>
-								<p>
-								<p>
-									We started out with the idea: "Let's create a tank-like robot!". 
-								</p>
-								<p>
-									We assembled some bicycle chains (to create robot caterpillar tracks), a thin base of metal for the structure, pieces of wood to fasten the sensors and create some wheels, acrylic for the Lighthouse receiver pole and then we bought all the electronics required and got down to work.
-								</p>
-								<p>
-									The intellectual process began, and the pros and cons of the raw ideas had to be discussed. 
-									As an example of this was the drop of the caterpillar tracks, which, after some tests revealed themselves "too heavy" and unpractical - our small motors weren't able to move them fast enough.
-									Simple wheels, made of simple wood were adopted instead.
-								</p>
+									We started out with the idea: "Let's create a tank-like robot!".<br> 
+									We assembled some bicycle chains (to create robot caterpillar tracks), a thin base of metal for the structure, pieces of wood to fasten the sensors and create some wheels, acrylic for the Lighthouse receiver pole and then we bought all the electronics required and got down to work.<br>
 								<a href="images/rato3.jpg" data-lightbox="image-3">
-									<img src="images/rato3.jpg" height="250" style="float:left; margin: 0 5% 1% 1%; border-radius:10px"/>
+									<img src="images/rato3.jpg" height="250" style="float:left; margin: 2% 5% 1% 1%; border-radius:10px"/>
 								</a>
-								<p>
-									The will to make a "tank-like" robot remained however, so we added a cannon to keep the idea alive, on whose top stood the beacon signal receiver, and would rise from an initial horizontal position to a vertical position at the beginning of the contest, with the help of a servo motor.
-									Another servo was connected to the beacon receiver, allowing a 180 degrees movement, for an increased probability of capturing the signal.
-								</p>
-								<p>
-									Apart from these design characteristics, the vehicle was controlled with the pic32 evaluation board won at the previous competition, and had some of the following components:
+									A servo was connected to the beacon receiver, allowing a 180 degrees movement, for an increased probability of capturing the signal.<br>
+									Some of the electronics used:<br><br>
 								<ul>
 									<ul><ul><ul><ul><ul><ul><ul><ul><ul><ul>
 										<li>&#9658 1* Ground Sensors: <a href="http://www.vishay.com/docs/83760/tcrt5000.pdf" class="link">TCRT5000</a> from <a href="http://www.vishay.com/" class="link">Vishay</a>;</li>
@@ -698,12 +595,9 @@
 									</ul></ul></ul></ul></ul></ul></ul></ul></ul></ul>
 								</ul>
 								</p>
-								<p>
-									More specifically on the pic32 board, a special shield was made, so as to simplify the interconnection with the rest of the components.
-								This board, which was completely made at home, using the Laser Printer - Iron - Ferric Chloride Solution method, can be seen in the picture to the left, and has the following characteristics:
-								</p>
+								<br><br><br>Regarding the developed board, pictured above, it contains:<br><br>
 								<a href="images/rato2.jpg" data-lightbox="image-3">
-									<img src="images/rato2.jpg" height="350" style="float:right; margin: 0 1% 1% 5%; border-radius:10px"/>
+									<img src="images/rato2.jpg" height="250" style="float:right; margin: 0 1% 1% 5%; border-radius:10px"/>
 								</a>	
 								<ul>
 									<ul>
@@ -714,54 +608,32 @@
 										<li>&#9658 Output/input ports available for future usage as a generic tests board.</li>
 									</ul>
 								</ul>
-								<p>
-									With all the hardware assembled, all that was left was to create the code, the brain of the robot.
-									For this, part of the previous year robot intelligence was reutilized, however many aspects had to be optimized/modified or completely renovated due to the new hardware.
-									This was another challenge, but it was exciting to see the robot coming to life, every time we added new functions to the pic32.
-								</p>
-								<p>
-									As of the final product, dressed for the competition it is pictured to the right, on its full splendour as a small tank-like vehicle!
-								</p>													
+									Regarding the SW, most of the previous year robot intelligence was re-utilized, however many aspects had to be optimized/modified or completely renovated due to the new hardware.<br>
+									The final robot, dressed for the competition is pictured to the right, on its full splendour as a small tank-like vehicle!<br><br>
 								<ul>
 									<li><strong>The Competition</strong></li>
 								</ul>
 								<p>
-									After the robot was assembled the tests phase began, which took some time due to the constant modifications made to improve the overall performance.
-								One of these sessions can be seen in the video below, where the robot had to avoid the obstacles around it, whilst not having a destination reference.
+									After the robot was assembled the tests sessions began. One of these sessions can be seen in the video below, where the robot had to avoid the obstacles around it, whilst not having a destination reference.
 								</p>
 								<br>
 								<span class='embed-youtube' style='text-align:centre; display: block;'>
 									<iframe width='100%' height='500' src="http://www.youtube.com/embed/D5OZdfUp0_E" frameborder="0" allowfullscreen></iframe>
 								</span>
 								<br>
-																
-								<p>
-									Although in the latter training sessions before the competition, and in the competition training grounds themselves the robot had a rather positive performance, during the real thing, something else happened.
-								A problem related with the ground sensors (used for beacon area detection) happened: they were receiving the signals emitted from the contestant's obstacle detectors, and interpreting that as an indication of "arrival at destination". 
+												
+									Although in latter training sessions, and in the competition training grounds the robot had a great performance, there where some problems during the competition itself.<br>
+								There was a problem with the ground sensors (used for beacon area detection): they were receiving the signals emitted from the contestant's obstacle detectors, and interpreting that as an indication of "arrival at destination". 
 								That meant a faulty behaviour, immediately after the start of the competition, and consequent declassification from the match.
-								</p>
-								<p>
-									During the second round of the competition, efforts were made to solve this problem, but with no success. In the end the robot was declassified from both rounds, leaving only frustration from the fact that the robot could execute the course with success, but only if it was alone on the field.
-								</p>
-								<ul>
-									<li><strong>Conclusion</strong></li>
-								</ul>
-								<p>
-									Although no trophy was won, and the attempt on the title had failed, it was still a very rewarding experience to have built the Micro-Mouse from scratch, which separated us from the competition, who chose to develop the software for provided robots.
-								</p>
-								<p>
-									This can be confirmed from the picture below, were our robot, BEST-A (which in Portuguese stands for Beast), poses for a photo together with its clearly distinct (but equal amongst themselves) contenders.
-								</p>
+								During the second round of the competition, efforts were made to solve this problem, but with no success.<br>
+								In the end the robot was declassified, but still, it was a great experience.<br><br>
 								
 								<p style="text-align:centre;">
 									<a href="images/rato1.jpg" data-lightbox="image-3">
 										<img src="images/rato1.jpg" height="350" style="float:centre; margin: 0 5% 1% 5%; border-radius:10px"/>
 									</a>
 								</p>
-								<p>
-									What remains in the end nevertheless, was not the dread performance on the tournament, but the knowledge applied and acquired during this great adventure.
-								Most of all, it was an opportunity to apply different competences acquired during many courses, to put together many valences (from programming, to signal conditioning or even control theory) into building something concrete, with defined objectives and purposes.
-								</p>
+
 							</div>
 						</div>
 							<footer>
@@ -784,9 +656,9 @@
 								</a>
 								<li><strong>The "What?"</strong></li>
 								</ul>
-								<p>This project is related with the work I made for my master thesis, and is involved with the concept of Energy Harvesting and the means to transform the received energy into a useful application, in this case, generating light.</p>
-								<p>This work was made in cooperation with the Telecommunications Institute of Aveiro, under the orientation of Professor Dr. Nuno Borges Carvalho, to whom I&#8217;m grateful for the support provided.</p>
-								<p>Basically the idea here was, through the understanding of the non-linear processes involved in the rectification process that converts the ambient RF power into DC energy, creating systems with high efficiency and/or output voltage. This ought to be achieved from the waves emitted by an ordinary FM emitter antenna, allowing the powering of 2/3 low consumption LED&#8217;s from a couple of hundred meters of distance to the source.</p>
+								This project is related with the work I made for my master thesis, and involves the concept of Energy Harvesting and the means to transform the received energy into a useful application.<br>
+								This work was made in cooperation with the Telecommunications Institute of Aveiro, under the orientation of Professor Dr. Nuno Borges Carvalho, to whom I&#8217;m grateful for the support provided.<br>
+								Basically the idea here was, through the understanding of the non-linear processes involved in the rectification process that converts the ambient RF power into DC energy, creating systems with high efficiency and/or output voltage. This ought to be achieved from the waves emitted by an ordinary FM emitter antenna, allowing the powering of 2/3 low consumption LED&#8217;s from a couple of hundred meters of distance to the source.<br>
 								<ul>
 								<br>
 								<li><strong>The "How?"</strong></li>
@@ -809,8 +681,8 @@
 								<br>
 								<li><strong>The "Big Picture"</strong></li>
 								</ul>
-								<p>Getting all the elements together, a system that effectively converted the energy of a FM radio emitter into visible light was achieved, having been tested on the field in Aveiro, Portugal.</p>
-								<p>Basically the experienced consisted in two phases:</p>
+								Getting all the elements together, a system that effectively converted the energy of a FM radio emitter into visible light was achieved, having been tested on the field in Aveiro, Portugal.<br>
+								Basically the experienced consisted in two phases:<br><br>
 								<ul>
 									<ul>
 										<li><span style="line-height:13px;"><strong>a)</strong> The energy-harvesting circuits without LED&#8217;s were connected to the FM antenna on one side, and to a multimeter on the other to measure the harvested DC voltage.</span></li>
@@ -821,6 +693,7 @@
 								<span class='embed-youtube' style='text-align:centre; display: block;'>
 									<iframe class='youtube-player' type='text/html' width='593' height='364' src='http://www.youtube.com/embed/xEHFZO_CSiU?version=3&#038;rel=1&#038;fs=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' frameborder='0'></iframe>
 								</span>
+								<br>
 								<p>On the picture below , the best results achieved are again presented, where it can be seen that up to a distance of 400m from an emitter, 2 LEDs where successfully powered up, having been obtained about 5.34 V.</p>
 								<p style="text-align:centre;">
 									<a href="images/rf_4.png" data-lightbox="image-4">
@@ -848,25 +721,24 @@
 										<img src="images/micro1.jpg" style="float:left; margin: 1% 5% 1% 1%; border-radius:10px;"width="400">
 									</a>
 								</p>
-								Micro-Mouse is an event where small robots compete against each other to solve maze as fastest and with the minimum collisions as possible.<br><br> 
-								Basically the robots have to follow a signal until they reach a destination, and then they have to return to their starting point, and all has to be made without any human interference. An example of a (very simple) maze can be found below.<br><br>
-								In March 2011, together with <a title="Fábio Rico" href="http://www.fabiorvrico.wordpress.com" class="link">Fábio Rico</a>, I decided to participate on the local contest of my university. This seemed a great opportunity to apply some of the knowledge acquired in some of the courses I attended. Although this was a multidisciplinary contest evolving both Hardware and Software competences, we chose (as did all the participants in that year&#8217;s contest) to
-								borrow the hardware provided by the organization of the event and focus on the software to solve the maze, only.<br>
+								Micro-Mouse is an event where small robots compete against each other to solve maze as fastest and with the minimum collisions as possible.<br>
+								Basically the robots have to follow a signal until they reach a destination, and then they have to return to their starting point, and all has to be made without any human interference.<br>
+								Although this was a multidisciplinary contest evolving both Hardware and Software, it was chosen to borrow the hardware provided by the organization of the event and focus on the software to solve the maze, only.<br>
 								<p style="text-align:centre;">
 									<a href="images/micro2.jpg" data-lightbox="image-5">
 										<img src="images/micro2.jpg"  style="float:right; margin: 1% 1% 1% 5%; border-radius:10px;" width="200">
 									</a>
 								</p>
-								This robot, that came equipped with two DC motors and respective H-bridges, three Sharp distance sensors, an IV receiver (to detect the signal emitted from the centre of the maze) and a pic18f for processing, had to combine the abilities of following walls, avoiding other robots and finding the centre of the maze, all on it's own. As a student of the 4th year of Electronics and Telecommunications Engineering at the time, this seemed very fun and appealing challenge.
-								To achieve the objective of building this &#8220;intelligent&#8221; being, we made use of the transparent reading and writing of the available HW modules, and applied this information into a couple of control algorithms to perform the following operations:<br><br>
+								This robot, that came equipped with two DC motors and respective H-bridges, three Sharp distance sensors, an IV receiver (to detect the signal emitted from the centre of the maze) and a pic18f for processing, had to combine the abilities of following walls, avoiding other robots and finding the centre of the maze, all on it's own.<br>
+								The developed algorithm had to:<br><br>
 								<ul>
 									<li>&#9658 Follow Walls</li>
 									<li>&#9658 Avoid Obstacles (Other robots, very near walls)</li>
 									<li>&#9658 Follow Beacon (to reach the centre)</li>
-									<li>&#9658 Avoid Beacon (after reaching the centre of the maze, our implemented solution to reach the starting point was to just get away from the centre for a specified amount of time and then stopping)</li>
+									<li>&#9658 Avoid Beacon (after reaching the centre of the maze, the implemented solution to reach the starting point was to just get away from the centre for a specified amount of time and then stopping)</li>
 								</ul>
-								The developed code, which was compiled with CCS and then sent to a pic18f258 trough a TinyBootLoader application every time changes where made, followed a simple structure with functions for each of the operations it had to execute, and some interruptions to generate time-triggered events, and some reads from the ADC.<br><br>
-								The robot itself, which is shown in the photo above, having made a very good contest on the first three rounds, applied to the finals where it managed the second place of the competition, what earned us a pic32 proprietary board from the University of Aveiro Electronics Department (picture below).<br><br>
+								The developed code, which was compiled with CCS and then sent to a pic18f258 trough a TinyBootLoader application, followed a simple structure with functions for each of the operations it had to execute, and some interruptions to generate time-triggered events, and some reads from the ADC.<br><br>
+								The robot itself, which is shown in the photo to the right, having made a very good contest on the first three rounds, applied to the finals where it managed the second place of the competition, what earned us a pic32 proprietary board from the University of Aveiro Electronics Department (picture below).<br><br>
 								<p style="text-align:centre;">
 									<a href="images/micro3.jpg" data-lightbox="image-5">
 										<img src="images/micro3.jpg" style="border-radius:10px" width="500">
