@@ -195,12 +195,6 @@
 		{
 			display: inline-block;
 			border: 0;
-				
-			-moz-transition: background-color 0.35s ease-in-out;
-			-webkit-transition: background-color 0.35s ease-in-out;
-			-o-transition: background-color 0.35s ease-in-out;
-			-ms-transition: background-color 0.35s ease-in-out;
-			transition: background-color 0.35s ease-in-out;
 		}
 		
 			.image img
@@ -678,7 +672,7 @@
 
 							#nav ul li a.active span:before
 							{
-								color: #e27689;
+								color: #5dece6;
 							}
 
 /*********************************************************************************/

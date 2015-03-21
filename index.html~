@@ -17,7 +17,7 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
-		
+				
 		<!-- image handling -->
 		<link href="lightbox/css/lightbox.css" rel="stylesheet" />
 		<script src="lightbox/js/jquery-1.10.2.min.js"></script>
@@ -106,19 +106,19 @@
 							<div class="row">
 								<div class="4u">
 									<article class="item">
-										<a href="#meteo_station" class="image fit"><img src="images/meteo_web.png" alt="" /></a>
+										<a href="#meteo_station" class="image fit scrolly"><img src="images/meteo_web.png" alt="" /></a>
 										<header>
 											<h3>Meteo Station [2013]</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#emenu_service" class="image fit"><img src="images/emenu_c.png" alt="" /></a>
+										<a href="#emenu_service" class="image fit scrolly"><img src="images/emenu_c.png" alt="" /></a>
 										<header>
 											<h3>eMenu Service [2013]</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#horarios_vimeca" class="image fit"><img src="images/vimeca.jpg" alt="" /></a>
+										<a href="#horarios_vimeca" class="image fit scrolly"><img src="images/vimeca.jpg" alt="" /></a>
 										<header>
 											<h3>Horarios Vimeca [2013]</h3>
 										</header>
@@ -126,19 +126,19 @@
 								</div>
 								<div class="4u">
 									<article class="item">
-										<a href="#cantina_siemens" class="image fit"><img src="images/cantina.png" alt="" /></a>
+										<a href="#cantina_siemens" class="image fit scrolly"><img src="images/cantina.png" alt="" /></a>
 										<header>
 											<h3>Cantina Siemens [2013]</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#raspberry_experiences" class="image fit"><img src="images/rpi_1.jpg" alt="" /></a>
+										<a href="#raspberry_experiences" class="image fit scrolly"><img src="images/rpi_1.jpg" alt="" /></a>
 										<header>
 											<h3>Raspberry Experiences [2012]</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#micro_mouse_ii" class="image fit"><img src="images/rato2.jpg" alt="" /></a>
+										<a href="#micro_mouse_ii" class="image fit scrolly"><img src="images/rato2.jpg" alt="" /></a>
 										<header>
 											<h3>Micro-Mouse II [2012]</h3>
 										</header>
@@ -146,24 +146,23 @@
 								</div>
 								<div class="4u">
 									<article class="item">
-										<a href="#illumination_no_cost" class="image fit"><img src="images/rf_4.png" alt="" /></a>
+										<a href="#illumination_no_cost" class="image fit scrolly"><img src="images/rf_4.png" alt="" /></a>
 										<header>
 											<h3>Illumination No-Cost [2012]</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#micro_mouse_i" class="image fit"><img src="images/micro1.jpg" alt="" /></a>
+										<a href="#micro_mouse_i" class="image fit scrolly"><img src="images/micro1.jpg" alt="" /></a>
 										<header>
 											<h3>Micro-Mouse I [2011]</h3>
 										</header>
 									</article>
 								</div>
 							</div>
-
+																	
+							
 						</div>
-					</section>
-				
-				
+					</section>								
 
 <! Meteo Station [2013] --------------------------------------------------------------------------------------------------------------------------->
 					<section id="portfolio" class="projects_odd">
@@ -485,7 +484,7 @@
 							</div>
 						</div>
 							<footer>
-								<a href="#portfolio" class="button scrolly">Back to Projects</a>
+								<a href="#portfolio"  class="button scrolly">Back to Projects</a>
 							</footer>
 					</section>
 
@@ -551,7 +550,7 @@
 							</div>
 						</div>
 							<footer>
-								<a href="#portfolio" class="button scrolly">Back to Projects</a>
+								<a href="#portfolio"  class="button scrolly">Back to Projects</a>
 							</footer>
 					</section>
 
@@ -637,7 +636,7 @@
 							</div>
 						</div>
 							<footer>
-								<a href="#portfolio" class="button scrolly">Back to Projects</a>
+								<a href="#portfolio"  class="button scrolly">Back to Projects</a>
 							</footer>
 					</section>
 
@@ -705,7 +704,7 @@
 							</div>
 						</div>
 							<footer>
-								<a href="#portfolio" class="button scrolly">Back to Projects</a>
+								<a href="#portfolio" class="button scrolly" >Back to Projects</a>
 							</footer>
 					</section>
 
@@ -747,7 +746,7 @@
 							</div>
 						</div>
 							<footer>
-								<a href="#portfolio" class="button scrolly">Back to Projects</a>
+								<a href="#portfolio"  class="button scrolly">Back to Projects</a>
 							</footer>
 					</section>
 					
@@ -805,7 +804,8 @@
 							Want something else?<br>...<br>
 							Then, don't hesitate to <b>contact me</b>!<br><br>
 							
-							<form method="post" action="#">
+							
+							<form method="POST" name= "contact_form" action="contact_form.php">
 								<div class="row 50%">
 									<div class="6u"><input type="text" name="name" placeholder="Name" /></div>
 									<div class="6u"><input type="text" name="email" placeholder="Email" /></div>
@@ -817,11 +817,19 @@
 								</div>
 								<div class="row">
 									<div class="12u">
-										<input type="submit" value="Send Message" />
+										<input type="submit" value="Submit"/>
 									</div>
 								</div>
 							</form>
 
+		<script language="JavaScript">
+			var frmvalidator  = new Validator("contact_form");
+			frmvalidator.addValidation("name","req","Please provide your name.");
+			frmvalidator.addValidation("email","req","Please provide your email.");
+			frmvalidator.addValidation("email","email",
+  			"Please enter a valid email address.");
+		</script>
+		
 						</div>
 					</section>
 			

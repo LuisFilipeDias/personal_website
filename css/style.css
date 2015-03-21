@@ -120,7 +120,7 @@
 
 		a:hover
 		{
-			color: #E27689;
+			color: #5dece6;
 			border-bottom-color: rgba(255,255,255,0);
 		}
 
@@ -672,7 +672,7 @@
 
 							#nav ul li a.active span:before
 							{
-								color: #e27689;
+								color: #5dece6;
 							}
 
 /*********************************************************************************/
