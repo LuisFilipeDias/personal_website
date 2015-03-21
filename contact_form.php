@@ -23,7 +23,7 @@ if( empty($errors))
 {
 	$to = $myemail; 
 	$email_subject = "Personal Website Message: $name";
-	$email_body = "You have received a new message. ".
+	$email_body = "You have received a new message from your website. ".
 	" Here are the details:\n Name: $name \n Email: $email_address \n Message \n $message"; 
 	
 	$headers = "From: $myemail\n"; 
@@ -31,10 +31,9 @@ if( empty($errors))
 	
 	mail($to,$email_subject,$email_body,$headers);
 	//redirect to the 'thank you' page
-	header('Location: contact-form-thank-you.html');
 } 
 ?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<!DOCTYPE HTML>
 <html>
 <head>
 	<title>Contact form handler</title>
