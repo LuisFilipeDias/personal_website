@@ -38,7 +38,7 @@
 					<!-- Logo -->
 						<div id="logo">
 							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
-							<h1 id="title">Luis Dias</h1>
+							<h1 id="title">Luis Filipe Dias</h1>
 							<p>Engineering & Whatnot</p>
 						</div>
 					<!-- Nav -->
@@ -101,10 +101,30 @@
 								<h2>Projects</h2>
 							</header>
 							<p>Here live some of my projects.<br>
-							From Android Apps, to Energy Harvesting, Robotics Contests or Domotic experiences.<br>
+							From Android Apps, to Energy Harvesting, Robotics Contests or Domotic Experiences.<br>
 							Just click and check it out!</p>
 							<div class="row">
-								<div class="4u">
+								<div class="4u">					
+					<!--
+									<article class="item">
+										<a href="#clock_puncher" class="image fit scrolly"><img src="images/emenu_c.png" alt="" /></a>
+										<header>
+											<h3>Clock Puncher [2015]</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#weights" class="image fit scrolly"><img src="images/emenu_c.png" alt="" /></a>
+										<header>
+											<h3>Weights [2014]</h3>
+										</header>
+									</article>			
+-->
+									<article class="item">
+										<a href="#horarios_vimeca_ii" class="image fit scrolly"><img src="images/vimeca_v2_2b.png" alt="" /></a>
+										<header>
+											<h3>Horarios Vimeca II [2014]</h3>
+										</header>
+									</article>
 									<article class="item">
 										<a href="#meteo_station" class="image fit scrolly"><img src="images/meteo_web.png" alt="" /></a>
 										<header>
@@ -114,17 +134,17 @@
 									<article class="item">
 										<a href="#emenu_service" class="image fit scrolly"><img src="images/emenu_c.png" alt="" /></a>
 										<header>
-											<h3>eMenu Service [2013]</h3>
+											<h3>eMenu Service I [2013]</h3>
 										</header>
 									</article>
+								</div>
+								<div class="4u">
 									<article class="item">
 										<a href="#horarios_vimeca" class="image fit scrolly"><img src="images/vimeca.jpg" alt="" /></a>
 										<header>
 											<h3>Horarios Vimeca [2013]</h3>
 										</header>
 									</article>
-								</div>
-								<div class="4u">
 									<article class="item">
 										<a href="#cantina_siemens" class="image fit scrolly"><img src="images/cantina.png" alt="" /></a>
 										<header>
@@ -137,14 +157,14 @@
 											<h3>Raspberry Experiences [2012]</h3>
 										</header>
 									</article>
+								</div>
+								<div class="4u">
 									<article class="item">
 										<a href="#micro_mouse_ii" class="image fit scrolly"><img src="images/rato2.jpg" alt="" /></a>
 										<header>
 											<h3>Micro-Mouse II [2012]</h3>
 										</header>
 									</article>
-								</div>
-								<div class="4u">
 									<article class="item">
 										<a href="#illumination_no_cost" class="image fit scrolly"><img src="images/rf_4.png" alt="" /></a>
 										<header>
@@ -164,6 +184,118 @@
 						</div>
 					</section>								
 
+
+<! Clock Puncher [2015] --------------------------------------------------------------------------------------------------------------------------->
+		
+<!--			<section id="portfolio" class="projects_odd">
+
+					<div id="clock_puncher">
+							<header>
+								<h2>Clock Puncher</h2>
+							</header>
+							<div id="text_format">
+							</div>
+							<footer>
+								<a href="#portfolio" class="button scrolly">Back to Projects</a>
+							</footer>
+					</section>
+		-->			
+					
+<! Weights [2014] --------------------------------------------------------------------------------------------------------------------------->
+			
+			<!--		<section id="portfolio" class="projects_even">
+
+					<div id="weights">
+							<header>
+								<h2>Weights</h2>
+							</header>
+							<div id="text_format">
+							</div>
+							<footer>
+								<a href="#portfolio" class="button scrolly">Back to Projects</a>
+							</footer>
+					</section>
+	-->				
+<! Horarios Vimeca II [2014] --------------------------------------------------------------------------------------------------------------------------->
+					<section id="portfolio" class="projects_even">
+
+					<div id="horarios_vimeca_ii">
+							<header>
+								<h2>Horarios Vimeca II [2014]</h2>
+							</header>
+							<div id="text_format">
+								<ul>
+									<li><strong>Evolution</strong></li>
+								</ul>
+								<p style="text-align:centre;">
+										<img src="images/vimeca_v2.png" height="200" style="float:right; margin: 0 5% 5% 5%; border-radius:0px;"/>
+								</p>
+								Ever since Horarios Vimeca first version was released, it had been downloaded over 1700 times, having more than 600 active installations.<br>
+								The App had good reviews, for it was fulfilling it's purpose without major flourishes.<br>
+								Nevertheless the number of active users of the application had stop increased for a while, and there where some problems and complaints.<br>
+								Amongst them:<br><br>								
+									<ul><ul>
+										<li>&#9658 A few timetables stopped working;</li>
+										<li>&#9658 Some routes couldn't be loaded;</li>
+										<li>&#9658 Advertising banner was unwelcome;</li>
+										<li>&#9658 Some summer/winter timetables where switched;</li>
+										<li>&#9658 Application would sometimes block;</li>
+										<li>&#9658 Data loading was very was slow;</li>
+										<li>&#9658 Users couldn't access the data offline;</li>
+										<li>&#9658 There was no option to save a favourites list;</li>
+									</ul></ul>			
+								
+								Furthermore, with the release of Android version 5.0 and the Material Design, the appearance became rather old fashioned.<br>
+								Regarding this, the Google Material Design guidelines <a href="http://www.analog.com/static/imported-files/data_sheets/TMP35_36_37.pdf" class="link">(click here for more info)</a>, were very handy, since they brought a standardized form for a simple, nice and clean interface.<br><br>
+
+								<p style="text-align:centre;">
+								<a href="images/vimeca_v2_2b.jpg" data-lightbox="image-a">
+										<img src="images/vimeca_v2_2.png" height="600" style="float:center; margin: 0 0% 0% 5%; border-radius:0px;"/>
+								</a>
+								</p>
+								<ul>
+									<li><strong>The Restyling</strong></li>
+								</ul>
+
+								The new Horarios Vimeca application, pictured above, touched three different points:<br><br>
+								
+									<ul><ul>
+										<li>&#9658 Correction of bugs, reported on the previous version;</li>
+										<li>&#9658 Introduction of a new look & feel, compatible with the latest Google guidelines;</li>
+										<li>&#9658 Introduction of new features, to enhance the App potential;</li>
+									</ul></ul>			
+								
+								Starting with the design, the purpose was to achieve:<br><br>
+									<ul><ul>
+										<li>&#9658 Cleaner/simpler interface, respecting the new graphical guidelines;</li>
+										<li>&#9658 Backwards compatibility to older Android versions;</li>
+										<li>&#9658 Brand new logo, in line with the Material Design;</li>
+										<li>&#9658 Faster loading of information;</li>
+										<li>&#9658 One menu to access all the features;</li>
+									</ul></ul>			
+								
+								Interlinked with the new design, the added main features where the following:<br><br>
+									<ul><ul>
+										<li>&#9658 Favourites menu, for both routes and timetables;</li>
+										<li>&#9658 Institutional information menu, with Vimeca information/contacts;</li>  	
+										<li>&#9658 Access to saved data offline;</li>
+									</ul></ul>			
+
+								<b>UPDATE:</b> about six months after the release of this new version, the results were clear: about 30% more active users (above 850).<br>
+								Also, the number of total installs jumped from about 1700 to more than 2200, and the cumulative average rating also increased.<br><br>
+								
+								<p style="text-align:centre;">
+									<a href="http://goo.gl/Fylpam">
+										<img src="images/google.png" id="googleLink" width="300"/>
+									</a>
+								</p>
+							</div>
+							<footer>
+								<a href="#portfolio" class="button scrolly">Back to Projects</a>
+							</footer>
+					</section>
+					
+				
 <! Meteo Station [2013] --------------------------------------------------------------------------------------------------------------------------->
 					<section id="portfolio" class="projects_odd">
 
@@ -271,12 +403,12 @@
 				
 					
 				
-<! eMenu Service [2013] --------------------------------------------------------------------------------------------------------------------------->
+<! eMenu Service I [2013] --------------------------------------------------------------------------------------------------------------------------->
 					<section id="portfolio" class="projects_even">
 
 					<div id="emenu_service">
 							<header>
-								<h2>eMenu Service [2013]</h2>
+								<h2>eMenu Service I [2013]</h2>
 							</header>
 							<div id="text_format">
 								<ul>
@@ -411,7 +543,7 @@
 					
 								<p style="text-align:centre;">
 									<a href="http://goo.gl/Fylpam">
-										<img src="images/google.png" id="googleLink" width="500"/>
+										<img src="images/google.png" id="googleLink" width="300"/>
 									</a>
 								</p>
 								
@@ -478,7 +610,7 @@
 					
 								<p style="text-align:centre;">
 									<a href="http://goo.gl/Kwfco">
-										<img src="images/google.png" id="googleLink" width="500"/>
+										<img src="images/google.png" id="googleLink" width="300"/>
 									</a>
 								</p>
 							</div>
@@ -834,9 +966,13 @@
 					</section>
 			
 			</div>
-
+ 
 		<!-- Footer -->
 			<div id="footer">
+
+<!-- START OF HIT COUNTER CODE -->
+<script language="JavaScript" src="http://www.counter160.com/js.js?img=6"></script><br><a href="http://www.000webhost.com"><img src="http://www.counter160.com/images/6/left.png" alt="Free web hosting" border="0" align="texttop"></a><a href="http://www.hosting24.com"><img alt="Web hosting" src="http://www.counter160.com/images/6/right.png" border="0" align="texttop"></a>
+<!-- END OF HIT COUNTER CODE -->
 				
 				<!-- Copyright -->
 					<ul class="copyright">
