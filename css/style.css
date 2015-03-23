@@ -818,3 +818,8 @@
 			{
 				margin-left: 70px;
 			}
+			
+			#text_format > ul > ul > ul > li
+			{
+				margin-left: 100px;
+			}

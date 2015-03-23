@@ -120,7 +120,7 @@
 
 		a:hover
 		{
-			color: #E27689;
+			color: #5dece6;
 			border-bottom-color: rgba(255,255,255,0);
 		}
 
@@ -817,4 +817,9 @@
 			#text_format > ul > ul > li
 			{
 				margin-left: 70px;
+			}
+			
+			#text_format > ul > ul > ul > li
+			{
+				margin-left: 200px;
 			}

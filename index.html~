@@ -112,13 +112,13 @@
 											<h3>Clock Puncher [2015]</h3>
 										</header>
 									</article>
+-->
 									<article class="item">
-										<a href="#weights" class="image fit scrolly"><img src="images/emenu_c.png" alt="" /></a>
+										<a href="#weights" class="image fit scrolly"><img src="images/weights.png" alt="" /></a>
 										<header>
 											<h3>Weights [2014]</h3>
 										</header>
 									</article>			
--->
 									<article class="item">
 										<a href="#horarios_vimeca_ii" class="image fit scrolly"><img src="images/vimeca_v2_2b.png" alt="" /></a>
 										<header>
@@ -131,14 +131,14 @@
 											<h3>Meteo Station [2013]</h3>
 										</header>
 									</article>
+								</div>
+								<div class="4u">
 									<article class="item">
 										<a href="#emenu_service" class="image fit scrolly"><img src="images/emenu_c.png" alt="" /></a>
 										<header>
 											<h3>eMenu Service I [2013]</h3>
 										</header>
 									</article>
-								</div>
-								<div class="4u">
 									<article class="item">
 										<a href="#horarios_vimeca" class="image fit scrolly"><img src="images/vimeca.jpg" alt="" /></a>
 										<header>
@@ -203,19 +203,79 @@
 					
 <! Weights [2014] --------------------------------------------------------------------------------------------------------------------------->
 			
-			<!--		<section id="portfolio" class="projects_even">
+					<section id="portfolio" class="projects_odd">
 
 					<div id="weights">
 							<header>
-								<h2>Weights</h2>
+								<h2>Weights [2014]</h2>
 							</header>
 							<div id="text_format">
+								<ul>
+									<li><strong>Context</strong></li>
+								</ul>
+								<p style="text-align:centre;">
+										<img src="images/weights_logo.png" height="200" style="float:right; margin: 0 5% 5% 5%; border-radius:0px;"/>
+								</p>
+								Weights App was created to fulfil a very simple purpose: to end the neglect of the weights at the Gym.<br>   
+								The idea was to make it a great and versatile tool for both the weight machines but also the cardio exercises.<br>  
+								To do this, the application had to include the following features:<br><br>
+								<ul><ul>
+										<li>&#9658 Logging of different gym exercises;</li>
+										<li>&#9658 Support for both the weight & the cardio machines;</li>
+										<li>&#9658 Keeping track of the exercises evolution;</li>
+										<li>&#9658 Registration of the performance evolution;</li>
+										<li>&#9658 Flexibility to change/edit the logs;</li>
+										<li>&#9658 Integration of the Google Material Design (similarly to Horarios Vimeca)</li>
+								</ul></ul>												
+
+								Besides these features, the application had to be simple, easy-to-use and provide the core functions within very clicks, in order to make it useable for gym environments.<br><br>
+
+								<p style="text-align:centre;">
+									<a href="images/weights.jpg" data-lightbox="image-a">
+										<img src="images/weights.png" height="600" style="float:center; margin: 0 0% 0% 5%; border-radius:0px;"/>
+									</a>							
+								</p>
+								
+								<ul>
+									<li><strong>Implementation</strong></li>
+								</ul>
+								As pictured above, Weighs App contained different menus for the different features, all accessible from a unique sidebar.<br>
+								These different menus are:<br><br>
+								<ul><ul>
+										<li>&#9658 <b>The List</b>:</li>
+											<ul>
+												<li>&#9632 Main door(menu) of the App;</li>
+												<li>&#9632 List to record all the activities (entries);</li>
+												<li>&#9632 Allows entering a machine or a cardio exercise;</li>
+												<li>&#9632 Contains the name, machine ID and latest log of the entry;</li>
+												<li>&#9632 Allows sorting the list for each of the fields above;</li>												
+												<li>&#9632 Allows edition of every entry;</li>
+												<li>&#9632 Supports a brief description for each entry;</li>
+											</ul>
+										<li>&#9658 <b>myEvolution</b>:</li>
+										<li>&#9658 <b>myWeight</b>:</li>
+										<li>&#9658 <b>Examples</b>:</li>
+											<ul>
+												<li>&#9632 Not yet implemented;</li>
+												<li>&#9632 Will contain a set of predefined exercises;</li>
+											</ul>
+										<li>&#9658 <b>Remove</b>:</li><ul>
+												<li>&#9632 Simple interface to remove deprecated exercises;</li>
+												<li>&#9632 Support removal of one or many entries at a time;</li>
+											</ul>
+									</ul></ul>
+								
+								<b>UPDATE:</b> six months after the release of this new version, the situation is the following:<br><br>
+
+
+								
+								
 							</div>
 							<footer>
 								<a href="#portfolio" class="button scrolly">Back to Projects</a>
 							</footer>
 					</section>
-	-->				
+					
 <! Horarios Vimeca II [2014] --------------------------------------------------------------------------------------------------------------------------->
 					<section id="portfolio" class="projects_even">
 
@@ -225,7 +285,7 @@
 							</header>
 							<div id="text_format">
 								<ul>
-									<li><strong>Evolution</strong></li>
+									<li><strong>Time to Renew</strong></li>
 								</ul>
 								<p style="text-align:centre;">
 										<img src="images/vimeca_v2.png" height="200" style="float:right; margin: 0 5% 5% 5%; border-radius:0px;"/>
