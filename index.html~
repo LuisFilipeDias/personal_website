@@ -114,13 +114,13 @@
 									</article>
 -->
 									<article class="item">
-										<a href="#weights" class="image fit scrolly"><img src="images/weights.png" alt="" /></a>
+										<a href="#weights" class="image fit scrolly"><img src="images/weights_white.png" alt="" /></a>
 										<header>
 											<h3>Weights [2014]</h3>
 										</header>
 									</article>			
 									<article class="item">
-										<a href="#horarios_vimeca_ii" class="image fit scrolly"><img src="images/vimeca_v2_2b.png" alt="" /></a>
+										<a href="#horarios_vimeca_ii" class="image fit scrolly"><img src="images/vimeca_v2_2_white.png" alt="" /></a>
 										<header>
 											<h3>Horarios Vimeca II [2014]</h3>
 										</header>
@@ -225,7 +225,7 @@
 										<li>&#9658 Keeping track of the exercises evolution;</li>
 										<li>&#9658 Registration of the performance evolution;</li>
 										<li>&#9658 Flexibility to change/edit the logs;</li>
-										<li>&#9658 Integration of the Google Material Design (similarly to Horarios Vimeca)</li>
+										<li>&#9658 Integration of the Google Material Design (similarly to Horarios Vimeca);</li>
 								</ul></ul>												
 
 								Besides these features, the application had to be simple, easy-to-use and provide the core functions within very clicks, in order to make it useable for gym environments.<br><br>
@@ -239,21 +239,31 @@
 								<ul>
 									<li><strong>Implementation</strong></li>
 								</ul>
-								As pictured above, Weighs App contained different menus for the different features, all accessible from a unique sidebar.<br>
-								These different menus are:<br><br>
+								As pictured above, Weighs App contained different menus for the different features, all accessible from a unique sidebar:<br><br>
 								<ul><ul>
 										<li>&#9658 <b>The List</b>:</li>
 											<ul>
 												<li>&#9632 Main door(menu) of the App;</li>
 												<li>&#9632 List to record all the activities (entries);</li>
 												<li>&#9632 Allows entering a machine or a cardio exercise;</li>
-												<li>&#9632 Contains the name, machine ID and latest log of the entry;</li>
-												<li>&#9632 Allows sorting the list for each of the fields above;</li>												
+												<li>&#9632 Contains the Name, Machine ID and Latest Log of the entry;</li>
+												<li>&#9632 Allows list sorting for each of the fields;</li>												
 												<li>&#9632 Allows edition of every entry;</li>
 												<li>&#9632 Supports a brief description for each entry;</li>
 											</ul>
 										<li>&#9658 <b>myEvolution</b>:</li>
+											<ul>
+												<li>&#9632 Contains a graph with the stats for every entry;</li>
+												<li>&#9632 Plots a Weight/Repetitions/Series graph for the machines;</li>
+												<li>&#9632 Plots a Distance/Duration/Level graph for the cardio;</li>
+												<li>&#9632 Allows list sorting for Name and ID;</li>
+											</ul>
 										<li>&#9658 <b>myWeight</b>:</li>
+											<ul>
+												<li>&#9632 Logs the weight values;</li>
+												<li>&#9632 Plots the weight evolution;</li>
+												<li>&#9632 Records the log entries details;</li>
+											</ul>
 										<li>&#9658 <b>Examples</b>:</li>
 											<ul>
 												<li>&#9632 Not yet implemented;</li>
@@ -265,9 +275,13 @@
 											</ul>
 									</ul></ul>
 								
-								<b>UPDATE:</b> six months after the release of this new version, the situation is the following:<br><br>
-
-
+								Besides the features above, there is also a settings menu to allow the user to change between imperial (Pounds & Miles) and metric (Kilometers & Kilograms) units.<br>
+								To check the App, click on the icon below.<br><br>
+								<p style="text-align:centre;">
+									<a href="http://goo.gl/0n9pib">
+										<img src="images/google.png" id="googleLink" width="300"/>
+									</a>
+								</p>
 								
 								
 							</div>
