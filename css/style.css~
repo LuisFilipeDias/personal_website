@@ -766,13 +766,13 @@
 		
 			#main > section.one
 			{
-				background-color: #e8edec;
+				background-color: #81918E;
 				background-image: url('../images/banner.jpg');
 			}
 
 			#main > section.two
 			{
-				background-color: #f5fafa;
+				background-color: #e8edec;
 			}
 		
 			#main > section.three
