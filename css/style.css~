@@ -766,7 +766,7 @@
 		
 			#main > section.one
 			{
-				background-color: #81918E;
+				background-color: #e8edec;
 				background-image: url('../images/banner.jpg');
 			}
 
@@ -821,5 +821,5 @@
 			
 			#text_format > ul > ul > ul > li
 			{
-				margin-left: 200px;
+				margin-left: 100px;
 			}

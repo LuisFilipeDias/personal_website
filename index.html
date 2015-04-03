@@ -123,14 +123,14 @@
 											<h3>Horarios Vimeca II [2014]</h3>
 										</header>
 									</article>
+								</div>
+								<div class="4u">
 									<article class="item">
-										<a href="#meteo_station" class="image fit scrolly"><img src="images/meteo_web.png" alt="" /></a>
+										<a href="#meteo_station" class="image fit scrolly"><img src="images/rasp_rf.jpg" alt="" /></a>
 										<header>
 											<h3>Meteo Station [2013]</h3>
 										</header>
 									</article>
-								</div>
-								<div class="4u">
 									<article class="item">
 										<a href="#emenu_service" class="image fit scrolly"><img src="images/emenu_c.png" alt="" /></a>
 										<header>
@@ -149,14 +149,14 @@
 											<h3>Cantina Siemens [2013]</h3>
 										</header>
 									</article>
+								</div>
+								<div class="4u">
 									<article class="item">
 										<a href="#raspberry_experiences" class="image fit scrolly"><img src="images/rpi_1.jpg" alt="" /></a>
 										<header>
 											<h3>Raspberry Experiences [2012]</h3>
 										</header>
 									</article>
-								</div>
-								<div class="4u">
 									<article class="item">
 										<a href="#micro_mouse_ii" class="image fit scrolly"><img src="images/rato2.jpg" alt="" /></a>
 										<header>
@@ -185,30 +185,84 @@
 
 <! Clock Puncher [2015] --------------------------------------------------------------------------------------------------------------------------->
 		
-			<section id="portfolio" class="projects_odd">
+			<section id="portfolio" class="projects_even">
 
 					<div id="clock_puncher">
 							<header>
 								<h2>Clock Puncher</h2>
 							</header>
 							<div id="text_format">
-							<div id="text_format">
 								<ul>
-									<li><strong>Purpose</strong></li>
+									<li><strong>Motivation</strong></li>
 								</ul>
 								<p style="text-align:centre;">
 									<a href="images/clock_puncher.png" data-lightbox="image-a">
 											<img src="images/clock_puncher.png" height="250" style="float:right; margin: 0 5% 5% 5%; border-radius:0px;"/>
 									</a>							
 								</p>
+								This project was started to address the need to log the working hours at the office, since there was no deployed application that met the desired requirements at the time.<br>
+								The motivation to log the hours came not from company policies but from the need to self-manage the working hours (and to discourage too much extra-hours).<br>
+								<b>QT Creator</b> was chosen as the IDE of choice, since it provides, together with C++, an easy way to create platform independent programs, needing only the target to be changed at compilation time.<br><br>
 								<ul>
-									<li><strong>Features</strong></li>
+									<li><strong>Features & Requirements</strong></li>
 								</ul>
+								Some of the main requirements are listed below:<br><br>				
+								<ul><ul>
+										<li>&#9658 A simple interface;</li>
+										<li>&#9658 Allow editing the values;</li>
+										<li>&#9658 Plot the weekly/monthly statistics;</li>
+										<li>&#9658 To work on both Linux & Windows;</li>
+										<li>&#9658 Use Git & GitHub for code management;</li>
+										<li>&#9658 To work for both Linux & Windows using same DB;</li>
+								</ul></ul>																				
+								
+								To fulfil these requirements a simple program, consisting of 5 different views was created: (Main - pictured below, Calendar, Raw, Weekly Stats & Monthly Stats).<br><br>
+								
+								
 								<p style="text-align:centre;">
 									<a href="images/puncher_main.png" data-lightbox="image-a">
 											<img src="images/puncher_main.png" height="200" style="float:centre; margin: 0 5% 5% 5%; border-radius:0px;"/>
 									</a>							
 								</p>
+								
+								
+								<ul><ul>
+										<li><b>&#9658 Main:</b></li>
+											<ul>
+												<li>&#9632 Start/Stop, Edit or Reset the clock counter;</li>
+												<li>&#9632 A small display shows the current counter value;</li>
+												<li>&#9632 All other views are only accessible from this view;</li>												
+											</ul>
+										<li><b>&#9658 Calendar:</b></li>
+											<ul>
+												<li>&#9632 [Hotkey] -> 1;</li>
+												<li>&#9632 View every past log;</li>
+												<li>&#9632 Update previous records;</li>
+											</ul>
+										<li><b>&#9658 Raw:</b></li>
+											<ul>
+												<li>&#9632 [Hotkey] -> 2;</li>
+												<li>&#9632 Presents the information of the SQLite table;</li>
+												<li>&#9632 Useful for debugging purposes;</li>
+												<li>&#9632 Pictured below, together with <b>Calendar</b> view;</li>
+											</ul>
+										<li><b>&#9658 Weekly Stats:</b></li>
+											<ul>
+												<li>&#9632 [Hotkey] -> 3;</li>
+												<li>&#9632 Graphical interface, for easy understanding of data;</li>
+												<li>&#9632 Plots the working hours for each day of the week;</li>
+												<li>&#9632 Plots the average working hours;</li>
+												<li>&#9632 Indicates the working days, total hours and average hours for the week;</li>
+											</ul>
+										<li><b>&#9658 Monthly Stats:</b></li>
+											<ul>
+												<li>&#9632 [Hotkey] -> 4;</li>
+												<li>&#9632 Similar Graphical interface, shows monthly data instead of weekly;</li>
+												<li>&#9632 Pictured below, together with <b>Weekly Stats</b> view;</li>
+											</ul>
+								</ul></ul>																				
+
+
 								<p style="text-align:centre;">
 									<a href="images/puncher_data.png" data-lightbox="image-a">
 											<img src="images/puncher_data.png" height="550" style="float:centre; margin: 0 5% 5% 5%; border-radius:0px;"/>
@@ -218,14 +272,16 @@
 											<img src="images/puncher_stats.png" height="450" style="float:centre; margin: 0 5% 5% 0%; border-radius:0px;"/>
 									</a>							
 								</p>
-
-								From left to right:
-
-
-								Want to contribute?
+								For more information, refer to the <b>GitHub</b> project page, by following the link below.<br><br>
 								
-								Create an issue here:
+								<p style="text-align:centre;">
+									<a href="https://github.com/LuisFilipeDias/puncher" onclick="window.open(this.href);return false;">
+											<img src="images/github.png" id="googleLink" width="300"/>
+									</a>							
+								</p>
 								
+								Please note that this is an ongoing <b>open-source</b> project, so contributions are more than welcome.<br>
+								<b>GitHub</b> makes cooperation easy, give it a try!<br><br>
 								
 							</div>
 							<footer>
