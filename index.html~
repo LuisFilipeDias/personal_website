@@ -69,9 +69,9 @@
 				<div class="bottom">
 					<!-- Social Icons -->
 						<ul class="icons">
-							<li><a href="https://twitter.com/t0am" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="http://www.linkedin.com/in/luisfrdias" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-							<li><a href="https://github.com/LuisFilipeDias" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://twitter.com/t0am" onclick="window.open(this.href);return false;" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="http://www.linkedin.com/in/luisfrdias" onclick="window.open(this.href);return false;" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://github.com/LuisFilipeDias" onclick="window.open(this.href);return false;" class="icon fa-github"><span class="label">Github</span></a></li>
 							<li><a href="mailto:luisfiliperdias@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
 				</div>
@@ -105,14 +105,12 @@
 							Just click and check it out!</p>
 							<div class="row">
 								<div class="4u">					
-					<!--
 									<article class="item">
-										<a href="#clock_puncher" class="image fit scrolly"><img src="images/emenu_c.png" alt="" /></a>
+										<a href="#clock_puncher" class="image fit scrolly"><img src="images/puncher_stats.png" alt="" /></a>
 										<header>
 											<h3>Clock Puncher [2015]</h3>
 										</header>
 									</article>
--->
 									<article class="item">
 										<a href="#weights" class="image fit scrolly"><img src="images/weights_white.png" alt="" /></a>
 										<header>
@@ -187,19 +185,53 @@
 
 <! Clock Puncher [2015] --------------------------------------------------------------------------------------------------------------------------->
 		
-<!--			<section id="portfolio" class="projects_odd">
+			<section id="portfolio" class="projects_odd">
 
 					<div id="clock_puncher">
 							<header>
 								<h2>Clock Puncher</h2>
 							</header>
 							<div id="text_format">
+							<div id="text_format">
+								<ul>
+									<li><strong>Purpose</strong></li>
+								</ul>
+								<p style="text-align:centre;">
+									<a href="images/clock_puncher.png" data-lightbox="image-a">
+											<img src="images/clock_puncher.png" height="250" style="float:right; margin: 0 5% 5% 5%; border-radius:0px;"/>
+									</a>							
+								</p>
+								<ul>
+									<li><strong>Features</strong></li>
+								</ul>
+								<p style="text-align:centre;">
+									<a href="images/puncher_main.png" data-lightbox="image-a">
+											<img src="images/puncher_main.png" height="200" style="float:centre; margin: 0 5% 5% 5%; border-radius:0px;"/>
+									</a>							
+								</p>
+								<p style="text-align:centre;">
+									<a href="images/puncher_data.png" data-lightbox="image-a">
+											<img src="images/puncher_data.png" height="550" style="float:centre; margin: 0 5% 5% 5%; border-radius:0px;"/>
+								</p>
+								<p style="text-align:centre;">
+									<a href="images/puncher_stats.png" data-lightbox="image-a">
+											<img src="images/puncher_stats.png" height="450" style="float:centre; margin: 0 5% 5% 0%; border-radius:0px;"/>
+									</a>							
+								</p>
+
+								From left to right:
+
+
+								Want to contribute?
+								
+								Create an issue here:
+
 							</div>
 							<footer>
 								<a href="#portfolio" class="button scrolly">Back to Projects</a>
 							</footer>
 					</section>
-		-->			
+					
 					
 <! Weights [2014] --------------------------------------------------------------------------------------------------------------------------->
 			
@@ -278,7 +310,7 @@
 								Besides the features above, there is also a settings menu to allow the user to change between imperial (Pounds & Miles) and metric (Kilometers & Kilograms) units.<br>
 								To check the App, click on the icon below.<br><br>
 								<p style="text-align:centre;">
-									<a href="http://goo.gl/0n9pib">
+									<a href="http://goo.gl/0n9pib" onclick="window.open(this.href);return false;">
 										<img src="images/google.png" id="googleLink" width="300"/>
 									</a>
 								</p>
@@ -320,7 +352,7 @@
 									</ul></ul>			
 								
 								Furthermore, with the release of Android version 5.0 and the Material Design, the appearance became rather old fashioned.<br>
-								Regarding this, the Google Material Design guidelines <a href="http://www.analog.com/static/imported-files/data_sheets/TMP35_36_37.pdf" class="link">(click here for more info)</a>, were very handy, since they brought a standardized form for a simple, nice and clean interface.<br><br>
+								Regarding this, the Google Material Design guidelines <a href="http://www.google.com/design/spec/material-design/introduction.html" onclick="window.open(this.href);return false;" class="link">(click here for more info)</a>, were very handy, since they brought a standardized form for a simple, nice and clean interface.<br><br>
 
 								<p style="text-align:centre;">
 								<a href="images/vimeca_v2_2b.jpg" data-lightbox="image-a">
@@ -359,7 +391,7 @@
 								Also, the number of total installs jumped from about 1700 to more than 2200, and the cumulative average rating also increased.<br><br>
 								
 								<p style="text-align:centre;">
-									<a href="http://goo.gl/Fylpam">
+									<a href="http://goo.gl/Fylpam" onclick="window.open(this.href);return false;">
 										<img src="images/google.png" id="googleLink" width="300"/>
 									</a>
 								</p>
@@ -400,16 +432,16 @@
 									The main components are:<br><br>
 									<ul><ul>
 										<li>&#9658 <b> 
-											<a href="http://www.analog.com/static/imported-files/data_sheets/TMP35_36_37.pdf" class="link">TMP37:</a></b> 
-											a simple low voltage temperature sensor from <a href="http://www.analog.com/" class="link">Analog</a>. 
+											<a href="http://www.analog.com/static/imported-files/data_sheets/TMP35_36_37.pdf" onclick="window.open(this.href);return false;" class="link">TMP37:</a></b> 
+											a simple low voltage temperature sensor from <a href="http://www.analog.com/" onclick="window.open(this.href);return false;" class="link">Analog</a>. 
 											This sensor is intended for applications over the range of 5 C to 100 C and provides an output scale factor of 20 mV/C.
 										</li>
 										<li>&#9658 <b>
-											<a href="http://ww1.microchip.com/downloads/en/DeviceDoc/39598F.pdf" class="link">PIC16F189:</a></b> 
-											a generic purpose Microcontroller from <a href="http://www.microchip.com/" class="link">Microchip</a>, with the essential features (for this project) of Analog-to-Digital conversion and UART interfacing; 
+											<a href="http://ww1.microchip.com/downloads/en/DeviceDoc/39598F.pdf" onclick="window.open(this.href);return false;" class="link">PIC16F189:</a></b> 
+											a generic purpose Microcontroller from <a href="http://www.microchip.com/" onclick="window.open(this.href);return false;" class="link">Microchip</a>, with the essential features (for this project) of Analog-to-Digital conversion and UART interfacing; 
 										</li>
 										<li>&#9658 <b>
-											<a href="http://www.sureelectronics.net/goods.php?id=1053" class="link">Wireless RF Transceiver:</a></b> 
+											<a href="http://www.sureelectronics.net/goods.php?id=1053" onclick="window.open(this.href);return false;" class="link">Wireless RF Transceiver:</a></b> 
 											a 2 pieces RF Transceiver with an UART interface, for establishing the communication between the serial interfaces of the PIC16F819 and the Raspberry Pi.</b>
 										</li>					
 									</ul></ul>
@@ -446,7 +478,7 @@
 										<li>&#9658 <b style="color: orange;">Orange:</b> temperature is in between 20 C and 30 C;</li>
 										<li>&#9658 <b style="color: red;">Red:</b> temperature is higher than 30 C;</li>
 									</ul></ul>			
-									The aforementioned website, which is public and available at <a href="http://meteo.comuv.com/">http://meteo.comuv.com/</a> is quite straightforward and effective in filling its only purpose (for now at least): showing the current temperature of the room where the Reading Station is located at.
+									The aforementioned website, which is public and available at <a href="http://meteo.comuv.com/" onclick="window.open(this.href);return false;">http://meteo.comuv.com/</a> is quite straightforward and effective in filling its only purpose (for now at least): showing the current temperature of the room where the Reading Station is located at.
 									A picture is found below.
 								</p>
 								<p style="text-align:centre;">
@@ -547,7 +579,7 @@
 								</p>
 		
 									<p style="text-align:centre;">
-										<a href="http://emenu.uphero.com/">
+										<a href="http://emenu.uphero.com/" onclick="window.open(this.href);return false;">
 											<img src="images/emenu_f.png"  id="googleLink" height="100" style="border-radius:10px;"/>
 										</a>
 									</p>
@@ -578,10 +610,10 @@
 										<img src="images/vimeca.jpg" height="250"  style="float:right; margin: 0 5% 1% 5%; border-radius:10px;"/>
 									</a>
 								</p>
-									As a customer of the <a title="Vimeca Website" class="link" href="http://www.vimeca.pt">Vimeca</a>'s Bus company for over half a year, I noticed a deficit of information on the Bus timings.
+									As a customer of the <a title="Vimeca Website" class="link" href="http://www.vimeca.pt" onclick="window.open(this.href);return false;">Vimeca</a>'s Bus company for over half a year, I noticed a deficit of information on the Bus timings.
 									No digital information panel, not even the printed timetables posted on the Bus stop. 
 									This meant inability to know the arrival times of the different Buses.<br>
-									Similarly to Cantina Siemens app, the information is also gathered online, in this case from <a title="Vimeca Website" class="link" href="http://www.vimeca.pt">Vimeca</a>'s website (<a title="Vimeca Website" class="link" href="www.vimeca.pt">www.vimeca.pt</a>) where all the timetables and routes are available.
+									Similarly to Cantina Siemens app, the information is also gathered online, in this case from <a title="Vimeca Website" class="link" href="http://www.vimeca.pt" onclick="window.open(this.href);return false;">Vimeca</a>'s website (<a title="Vimeca Website" class="link" href="www.vimeca.pt">www.vimeca.pt</a>) where all the timetables and routes are available.
 																		
 								<ul>
 									<br>
@@ -616,7 +648,7 @@
 								
 					
 								<p style="text-align:centre;">
-									<a href="http://goo.gl/Fylpam">
+									<a href="http://goo.gl/Fylpam" onclick="window.open(this.href);return false;">
 										<img src="images/google.png" id="googleLink" width="300"/>
 									</a>
 								</p>
@@ -645,7 +677,7 @@
 								Cantina Siemens was the first Android experience, and came from the need to learn by creating something new and useful.<br>
 								Basically:<br><br>
 								<ul><ul>
-									<li>&#9658 Cantina Siemens was the canteen of my workplace, at Amadora-Lisbon, that serves daily meals both to the employees of <a class="link" href="http://www.siemens.com/entry/pt/pt/">Siemens</a>, <a href="http://www.nokiasiemensnetworks.com/" class="link">Nokia Siemens Networks</a>, and <a class="link" href="http://www.coriant.com/">Coriant</a>.</li>
+									<li>&#9658 Cantina Siemens was the canteen of my workplace, at Amadora-Lisbon, that serves daily meals both to the employees of <a class="link" href="http://www.siemens.com/entry/pt/pt/" onclick="window.open(this.href);return false;">Siemens</a>, <a href="http://www.nokiasiemensnetworks.com/" onclick="window.open(this.href);return false;" class="link">Nokia Siemens Networks</a>, and <a class="link" href="http://www.coriant.com/" onclick="window.open(this.href);return false;">Coriant</a>.</li>
 									<li>&#9658 The canteen has different daily menus, whose contents are weekly updated on a proper website, thus allowing people to access the menus for the week.</li>
 									<li>&#9658 The idea was to bring this access to the mobile world.</li>
 									<li>&#9658 <strong>The idea was to simplify!</strong></li>
@@ -683,7 +715,7 @@
 								
 					
 								<p style="text-align:centre;">
-									<a href="http://goo.gl/Kwfco">
+									<a href="http://goo.gl/Kwfco" onclick="window.open(this.href);return false;">
 										<img src="images/google.png" id="googleLink" width="300"/>
 									</a>
 								</p>
@@ -776,7 +808,7 @@
 									<li><strong>The Motivation</strong></li>
 								</ul>
 									As a second attempt on the Micro-Mouse competition title, after achieving the 2nd place in the previous year (<a href="#MicroMouse" class="link">Micro-Mouse 2011</a>),
-								me and <a title="Fábio Rico's Website" class="link" href="http://www.fabiorvrico.wordpress.com">Fábio Rico</a>, decided to participate again.<br>
+								me and <a title="Fábio Rico's Website" class="link" href="http://www.fabiorvrico.wordpress.com" onclick="window.open(this.href);return false;">Fábio Rico</a>, decided to participate again.<br>
 									This time, however, a decision was made to build the entire robot from scratch, and then add some intelligence to it, which made the task harder, but also much more amusing and challenging.<br> 
 									An early sketch can be found on the picture to the right.<br>
 								<br>
@@ -792,9 +824,9 @@
 									Some of the electronics used:<br><br>
 								<ul>
 									<ul><ul><ul><ul><ul><ul><ul><ul><ul><ul>
-										<li>&#9658 1* Ground Sensors: <a href="http://www.vishay.com/docs/83760/tcrt5000.pdf" class="link">TCRT5000</a> from <a href="http://www.vishay.com/" class="link">Vishay</a>;</li>
-										<li>&#9658 2* Obstacle Sensor: <a href="https://www.sparkfun.com/datasheets/Components/GP2Y0A21YK.pdf" class="link">GP2Y0A21YK</a> from <a href="http://sharp-world.com/" class="link">Sharp</a>;</li>
-										<li>&#9658 1* Infrared Receiver: <a href="http://www.farnell.com/datasheets/9749.pdf" class="link">HIM602</a> from <a href="http://www.apc-hero.co.uk/" class="link">Hero</a>;</li>
+										<li>&#9658 1* Ground Sensors: <a href="http://www.vishay.com/docs/83760/tcrt5000.pdf" onclick="window.open(this.href);return false;" class="link">TCRT5000</a> from <a href="http://www.vishay.com/" onclick="window.open(this.href);return false;" class="link">Vishay</a>;</li>
+										<li>&#9658 2* Obstacle Sensor: <a href="https://www.sparkfun.com/datasheets/Components/GP2Y0A21YK.pdf" onclick="window.open(this.href);return false;" class="link">GP2Y0A21YK</a> from <a href="http://sharp-world.com/" onclick="window.open(this.href);return false;" class="link">Sharp</a>;</li>
+										<li>&#9658 1* Infrared Receiver: <a href="http://www.farnell.com/datasheets/9749.pdf" onclick="window.open(this.href);return false;" class="link">HIM602</a> from <a href="http://www.apc-hero.co.uk/" onclick="window.open(this.href);return false;" class="link">Hero</a>;</li>
 										<li>&#9658 2* DC Motors: 12V with 20RPM;</li>
 										<li>&#9658 2* Servo Motors: TBD;</li>
 									</ul></ul></ul></ul></ul></ul></ul></ul></ul></ul>
@@ -1045,12 +1077,12 @@
 			<div id="footer">
 
 <!-- START OF HIT COUNTER CODE -->
-<script language="JavaScript" src="http://www.counter160.com/js.js?img=6"></script><br><a href="http://www.000webhost.com"><img src="http://www.counter160.com/images/6/left.png" alt="Free web hosting" border="0" align="texttop"></a><a href="http://www.hosting24.com"><img alt="Web hosting" src="http://www.counter160.com/images/6/right.png" border="0" align="texttop"></a>
+<script language="JavaScript" src="http://www.counter160.com/js.js?img=6"></script><br><a href="http://www.000webhost.com" onclick="window.open(this.href);return false;"><img src="http://www.counter160.com/images/6/left.png" alt="Free web hosting" border="0" align="texttop"></a><a href="http://www.hosting24.com" onclick="window.open(this.href);return false;"><img alt="Web hosting" src="http://www.counter160.com/images/6/right.png" border="0" align="texttop"></a>
 <!-- END OF HIT COUNTER CODE -->
 				
 				<!-- Copyright -->
 					<ul class="copyright">
-						<li>&copy; LuisFilipeDias. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; LuisFilipeDias. All rights reserved.</li><li>Design: <a href="http://html5up.net" onclick="window.open(this.href);return false;">HTML5 UP</a></li>
 					</ul>
 				
 			</div>
